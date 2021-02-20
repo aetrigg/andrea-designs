@@ -8,6 +8,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './Contact';
+import Shop from './components/Shop.js';
+
 
 //desktop media query component
 const Desktop = ({ children }) => {
@@ -83,6 +85,7 @@ function App() {
             <NavigationLink activeClassName="active" className="navigation-link" name={"home"} value={"HOME"} />
             <NavigationLink activeClassName="active" className="navigation-link" name={"about"} value={"ABOUT"} />
             <NavigationLink activeClassName="active" className="navigation-link" name={"portfolio"} value={"PORTFOLIO"} />
+            <NavigationLink className="navigation-link" name={"shop"} value={"SHOP"} />
             <NavigationLink activeClassName="active" className="navigation-link" name={"contact"} value={"CONTACT"} />
           </Navigation>
         </ReactHamburger>
@@ -96,6 +99,7 @@ function App() {
             <NavLink exact activeClassName="active" to="/" className="item">HOME</NavLink>
             <NavLink exact activeClassName="active" to="/about" className="item">ABOUT</NavLink>
             <NavLink exact activeClassName="active" to="/portfolio" className="item">PORTFOLIO</NavLink>
+            <NavLink exact activeClassName="active" to="/shop" className="item">SHOP</NavLink>
             <NavLink exact activeClassName="active" to="/contact" className="item">CONTACT</NavLink>
           </div>
         </div>
@@ -104,7 +108,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/services" component={Services} />
+      <Route exact path="/shop" component={Shop} />
       <Route exact path="/contact" component={Contact} />
 
     </BrowserRouter>

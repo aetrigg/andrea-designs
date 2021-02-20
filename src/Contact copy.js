@@ -4,7 +4,7 @@ import smiley from './assets/black-smiley.svg';
 import axios from 'axios';
 import { useMediaQuery } from 'react-responsive';
 import Footer from './components/Footer.js';
-import { withAlert } from 'react-alert';
+import { useAlert } from 'react-alert';
 
 //desktop media query component
 const Desktop = ({ children }) => {
@@ -25,8 +25,7 @@ class Contact extends React.Component{
             name: '',
             email: '',
             subject: '',
-            message: '',
-            alert: ''
+            message: ''
         }
     }
 
@@ -54,14 +53,10 @@ class Contact extends React.Component{
             data: this.state
         }).then((response)=>{
             if(response.data.status === 'success'){
-                const alert = this.props.alert;
                 //alert("Message sent!");
-                alert.show('Message sent')
                 this.resetForm();
             }
             else if(response.data.status === 'fail'){
-                const alert = this.props.alert;
-                alert.show('Message failed to send. Please try again.')
                 //alert("Message failed to send.");
             }
         })
@@ -72,7 +67,6 @@ class Contact extends React.Component{
     }
 
     render(){
-
         return(
         <div className="responsive-container">
           <Mobile>
@@ -163,7 +157,7 @@ class Contact extends React.Component{
           
                       <textarea placeholder="Enter your message here" id="message" className="textareaForm margin-bottom item-i" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           
-                      <button type="submit" className="submitBtn item-j">Submit</button>
+                      <button type="submit" className="submitBtn item-j" onClick={''}>Submit</button>
           
                     </form>
                   </div>
@@ -179,4 +173,4 @@ class Contact extends React.Component{
 }
 
  
-export default withAlert()(Contact);
+export default Contact;

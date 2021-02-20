@@ -13,6 +13,7 @@
     "nodemailer": "^6.4.18",
     "nodemon": "^2.0.7",
     "react": "^17.0.1",
+    "react-alert": "^7.0.2",
     "react-dom": "^17.0.1",
     "react-hamburger": "^0.7.2",
     "react-responsive": "^8.2.0",
@@ -34,7 +35,7 @@
       "react-app/jest"
     ]
   },
-  "proxy" : "https://localhost:4444/",
+  "proxy": "https://localhost:4444/",
   "browserslist": {
     "production": [
       ">0.2%",
