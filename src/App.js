@@ -7,8 +7,12 @@ import { useMediaQuery } from 'react-responsive';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
+import Portfolio from './components/Portfolio';
 import Contact from './Contact';
 import Shop from './components/Shop.js';
+import PrivacyPolicy from './components/PrivacyPolicy.js';
+import TOS from './components/TOS';
+import RWBY from './components/RWBY';
 
 
 //desktop media query component
@@ -108,8 +112,12 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/portfolio" component={Portfolio} />
       <Route exact path="/shop" component={Shop} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+      <Route exact path="/tos" component={TOS} />
+      <Route exact path="/rwby" component={RWBY} />
 
     </BrowserRouter>
   );

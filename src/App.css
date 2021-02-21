@@ -10,7 +10,7 @@ path {
   /* COLORS */
   --electricity-pink: #FF99B0;
   --electricity-purple: #CD99EB;
-  --electricity-yellow: #FFCB90;
+  --electricity-yellow: #FFCB46;
   --true-black: #000;
   --canvas-white: #fcfbfb;
   --mac-grey: #adadad;
@@ -251,6 +251,7 @@ h3{
 .footer-link{
   font-family: "Anonymous Pro";
   font-weight:600;
+  font-size:2vh;
   font-style: italic;
   text-decoration:none;
   color:var(--true-black);
@@ -417,7 +418,7 @@ p.item-b{
 }
 
 .contact-form{
-  width:95%;
+  width:90%;
   border:var(--border);
   background-color:var(--canvas-white);
   box-shadow:var(--drop-shadow);
@@ -581,4 +582,254 @@ p.item-b{
 
 .item-j{
   grid-area: button;
+}
+
+.container.shop{
+  height:65vh !important;
+}
+
+.container-mobile.shop{
+  height:58vh !important;
+}
+
+.header.shop{
+  background-color: var(--electricity-yellow);
+}
+
+.etsy-shop, .rwby-container{
+  width:90%;
+  border:var(--border);
+  background-color:var(--canvas-white);
+  box-shadow:var(--drop-shadow);
+}
+
+.etsy-shop-mobile, .rwby-container-mobile{
+  width:90%;
+  border:var(--border);
+  background-color:var(--canvas-white);
+  box-shadow:var(--drop-shadow);
+}
+
+.etsy-shop-header, .rwby-header{
+  width:100%;
+  height:4vh;
+  border-bottom:var(--border-bottom);
+  display:grid;
+  grid-template-columns: 7.5vw auto;
+  grid-template-rows: 4vh;
+  grid-template-areas: "smileys headerText";
+  justify-items:center;
+  background-color:var(--electricity-yellow);
+}
+
+.etsy-shop-header-mobile, .rwby-header-mobile{
+  width:100%;
+  height:4vh;
+  border-bottom:var(--border-bottom);
+  display:grid;
+  grid-template-columns: 21vw auto;
+  grid-template-rows: 4vh;
+  grid-template-areas: "smileys headerText";
+  justify-items:center;
+  align-items:center;
+  background-color:var(--electricity-yellow);
+}
+
+.etsy-shop-container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.etsy-shop-container-mobile{
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.etsy-shop-container p{
+  font-family: "Anonymous Pro";
+  font-weight:600;
+  font-size:1.3vw;
+}
+
+.etsy-shop-container-mobile p{
+  font-family: "Anonymous Pro";
+  font-weight:600;
+  font-size:1.2vw;
+}
+
+.etsy-link{
+  text-decoration:underline;
+  color:var(--electricity-pink);
+}
+
+.etsy-link:hover{
+  color:var(--true-black);
+  transition: 0.5s ease;
+}
+
+.etsy-link:visited{
+  color:var(--electricity-pink);
+}
+
+.etsy-link:visited:hover{
+  color:var(--true-black);
+  transition: 0.5s ease;
+}
+
+.container.privacy, .container.tos, .container-mobile.tos, .container.rwby{
+  height:auto;
+}
+
+.header.privacy{
+  background-color:var(--electricity-purple);
+}
+
+.header.tos{
+  background-color:var(--electricity-pink);
+}
+
+.header.rwby{
+  background-color:var(--electricity-yellow);
+}
+
+.privacy-policy-container, .tos-container{
+  margin-left:3vw;
+  margin-right:3vw;
+}
+
+.privacy-policy-container p, .tos-container p, .tos-container li{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.3vw;
+}
+
+.privacy-policy-container h4, .tos-container h4{
+  font-family:"Poppins";
+  font-weight:700;
+  font-size:1.9vw;
+  margin-bottom:-10px;
+}
+
+.privacy-policy-container a, .tos-container a{
+  color:var(--electricity-pink);
+}
+
+.privacy-policy-container a:hover, .tos-container a:hover{
+  color:var(--true-black);
+  transition:0.5s ease;
+}
+
+.container-mobile.privacy{
+  height:auto;
+}
+
+h2.mobile.privacy{
+  font-size:3vh;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+h2.mobile.tos{
+  margin-bottom:10px;
+}
+
+.privacy-policy-container-mobile{
+  margin-left:3vw;
+  margin-right:3vw;
+}
+
+.privacy-policy-container-mobile p, .tos-container-mobile p{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+}
+
+.privacy-policy-container-mobile h4, .tos-container-mobile h4{
+  font-family:"Poppins";
+  font-weight:700;
+  font-size:2.7vh;
+  margin-bottom:-10px;
+}
+
+.privacy-policy-container-mobile a, .tos-container-mobile a{
+  color:var(--electricity-pink);
+}
+
+.tos-container-mobile a:hover{
+  color:var(--true-black);
+  transition: 0.5s ease;
+}
+
+.privacy-policy-container-mobile a:hover{
+  color:var(--true-black);
+  transition: 0.5s ease;
+}
+
+.center.margins2{
+  margin-left:5vh;
+  margin-right:5vh;
+}
+
+.mobile.tos{
+  margin-bottom:-10px;
+}
+
+h1.rwby{
+  font-size:4.2vw;
+  margin-bottom:-10px;
+}
+
+h2.rwby{
+  font-size:2.5vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+}
+
+.rwby-paper-container{
+  padding:2vh 4vh;
+}
+
+.rwby-paper-container-mobile{
+  padding:2.5vh;
+}
+
+.rwby-paper-center, .rwby-paper-center-mobile{
+  text-align:center;
+}
+
+
+.rwby-paper-container p{
+  font-family: "Anonymous Pro";
+  font-weight: 600;
+  font-size:1.2vw;
+}
+
+.rwby-paper-container-mobile p{
+  font-family: "Anonymous Pro";
+  font-weight:600;
+  font-size:2vh;
+}
+
+.rwby-paper-container a, .rwby-paper-container-mobile a{
+  color:var(--electricity-pink);
+  text-decoration:none;
+}
+
+.rwby-paper-container a:hover, .rwby-paper-container-mobile a:hover{
+  color:var(--true-black);
+  transition: 0.5s ease;
+}
+
+h1.mobile.rwby{
+  font-size:5.3vw;
+}
+
+h2.mobile.rwby{
+  font-size:3.5vw;
+}
+
+.container-mobile.rwby{
+  height:auto;
 }

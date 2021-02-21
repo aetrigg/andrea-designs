@@ -95,13 +95,13 @@ class Contact extends React.Component{
                 <div className="center">
                 <div className="contact-form-mobile">
                   <div className="contact-form-header-mobile">
-                    <div className="smileys-mobile">
+                    <div className="smileys-mobile item-a">
                       <img src={smiley} className="smiley" alt="smiley" />
                       <img src={smiley} className="smiley" alt="smiley" />
                       <img src={smiley} className="smiley" alt="smiley" />
                     </div>
         
-                    <p>contact-form.php</p>
+                    <p className="item-b">contact-form.php</p>
                   </div>
         
                   <form id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST">
