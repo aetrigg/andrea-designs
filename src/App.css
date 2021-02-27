@@ -622,6 +622,18 @@ p.item-b{
   background-color:var(--electricity-yellow);
 }
 
+.full-size-image-header{
+  width:100%;
+  height:4vh;
+  border-bottom:var(--border-bottom);
+  display:grid;
+  grid-template-columns: 7.5vw auto;
+  grid-template-rows: 4vh;
+  grid-template-areas: "smileys headerText";
+  justify-items:center;
+  background-color:var(--electricity-purple);
+}
+
 .etsy-shop-header-mobile, .rwby-header-mobile{
   width:100%;
   height:4vh;
@@ -831,5 +843,339 @@ h2.mobile.rwby{
 }
 
 .container-mobile.rwby{
+  height:auto;
+}
+
+.container.full-image{
+  height:auto;
+}
+
+.header.full-image{
+  background-color:var(--electricity-purple);
+}
+
+.full-size-image-container{
+  width:90%;
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  margin-top:2vw;
+}
+
+.center-full-size{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-meredith img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-rapunzel img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-pots img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-pod img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-countdown img{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-container-meredith video{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.full-size-image-button{
+  border:var(--border);
+  padding:10px 30px;
+  background-color:var(--electricity-purple);
+  margin-top:5vw;
+  cursor:pointer;
+}
+
+.full-size-image-button:hover{
+  background-color:var(--true-black);
+  transition:0.5s ease;
+}
+
+a.full-size-image-button{
+  font-family: "Anonymous Pro";
+  font-weight:600;
+  font-size:2vh;
+  text-decoration:none;
+  color:var(--true-black);
+}
+
+a.full-size-image-button:hover{
+  color:var(--canvas-white);
+  transition: 0.5s ease;
+}
+
+.container.portfolio{
+  height:auto;
+}
+
+.header.portfolio{
+  background-color:var(--electricity-pink);
+}
+
+/*.portfolio-container{
+  width:85%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}*/
+
+.portfolio-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.projects-container{
+  width:90%;
+}
+
+.radio-button-group{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding-bottom:2vw;
+}
+
+.RadioButton{
+  display:flex;
+  flex-direction:row;
+  cursor:pointer;
+}
+
+/*.RadioButton input{
+  position:absolute;
+  width:100px;
+  top:0;
+  left:0;
+  z-index:3;
+  cursor:pointer;
+}
+
+.radio-button{
+  position:relative;
+  z-index:2;
+  top:0;
+  left:0;
+  width:15px;
+  height:15px;
+  background-image:url('./assets/pixel-circle.svg');
+  background-repeat:no-repeat;
+  background-position: center;
+  cursor:pointer;
+}
+
+.RadioButton label{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  color:var(--true-black);
+  padding:0px 1vw;
+  font-size:1.25vw;
+}*/
+
+h4.h4-filter, h4.h4-tag{
+  font-family:"Poppins";
+  font-weight:700;
+  font-size:2vw;
+  margin-bottom:0px;
+}
+
+.radio-button{
+  font-family: "Anonymous Pro";
+  font-size:1.25vw;
+  font-weight:600;
+  color:var(--true-black);
+  display:flex;
+  cursor:pointer;
+}
+
+.radio__input input{
+  opacity:20;
+  width:0;
+  height:0;
+  display:none;
+}
+
+.radio__input{
+  margin-left:-15px;
+}
+
+.margin-top{
+  margin-top:1.25vw;
+}
+
+.radio__control{
+  display:block;
+  background-image:url('./assets/pixel-circle.svg');
+  width: 15px;
+  height:15px;
+  margin:0px 15px;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.radio__input#purpleTag input:checked + .radio__control{
+  background-color:var(--electricity-purple);
+  border-radius:50%;
+}
+
+.radio__input#purpleTag:hover input:hover + .radio__control:hover{
+  background-color:var(--electricity-purple);
+  border-radius:50%;
+  transition: background-color 0.5s ease;
+}
+
+.radio__input#yellowTag input:checked + .radio__control{
+  background-color:var(--electricity-yellow);
+  border-radius:50%;
+}
+
+.radio__input#yellowTag:hover input:hover + .radio__control:hover{
+  background-color:var(--electricity-yellow);
+  border-radius:50%;
+  transition: background-color 0.5s ease;
+}
+
+.radio__input#pinkTag input:checked + .radio__control{
+  background-color:var(--electricity-pink);
+  border-radius:50%;
+}
+
+.radio__input#pinkTag:hover input:hover + .radio__control:hover{
+  background-color:var(--electricity-pink);
+  border-radius:50%;
+  transition: background-color 0.5s ease;
+}
+
+.individual-project-container{
+  width:100%;
+  height:auto;
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  margin-bottom:4vw;
+}
+
+.projects-header{
+  height:4vh;
+  width:100%;
+  border-bottom:var(--border-bottom);
+  display: grid;
+  grid-template-columns: 7.5vw auto;
+  grid-template-rows: 4vh;
+  grid-template-areas: "smileys headerText";
+  justify-items: center;
+}
+
+.image-cover{
+  width:100%;
+  height:30vh;
+  border-bottom:var(--border-bottom);
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.image-image{
+  width:100%;
+}
+
+p.description{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.25vw;
+}
+
+.project-button{
+  text-decoration:none;
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.25vw;
+  border:var(--border);
+  color:var(--true-black);
+  padding:7px 10px;
+  margin-right:20px;
+}
+
+.project-button:hover{
+  cursor:pointer;
+  background-color:var(--true-black) !important;
+  color:var(--canvas-white);
+  transition: 0.5s ease;
+}
+
+.project-buttons{
+  display:flex;
+  flex-direction:row;
+}
+
+.project-tag{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1vw;
+  border:var(--border);
+  color:var(--true-black);
+  padding:2px 5px;
+  margin-left:15px;
+  height:1vw;
+  margin-top:20px;
+}
+
+.project-tags{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:flex-end;
+  flex-wrap:wrap;
+}
+
+h4.h4-tag{
+  height:32px;
+}
+
+.container-mobile.portfolio{
   height:auto;
 }

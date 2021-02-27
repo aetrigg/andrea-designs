@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import { positions, Provider as AlertProvider } from 'react-alert';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 const options = {
   timeout: 3000,
@@ -40,9 +42,13 @@ const AlertTemplate = ({ options, message, close }) => (
 
 ReactDOM.render(
   <React.StrictMode>
-    <AlertProvider template={AlertTemplate} {...options}>
-      <App />
-    </AlertProvider>
+    <Router>
+      <ScrollToTop>
+        <AlertProvider template={AlertTemplate} {...options}>
+          <App />
+        </AlertProvider>
+      </ScrollToTop>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

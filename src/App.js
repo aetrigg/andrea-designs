@@ -13,6 +13,12 @@ import Shop from './components/Shop.js';
 import PrivacyPolicy from './components/PrivacyPolicy.js';
 import TOS from './components/TOS';
 import RWBY from './components/RWBY';
+import Meredith from './components/Meredith';
+import MeredithTimeLapse from './components/MeredithTimeLapse';
+import Rapunzel from './components/Rapunzel';
+import POTS from './components/POTS';
+import POD from './components/POD';
+import EtsyCountdown from './components/EtsyCountdown';
 
 
 //desktop media query component
@@ -66,7 +72,7 @@ class Navigation extends React.Component{
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="PersonalApp">
 
       <Mobile>
         <ReactHamburger 
@@ -118,8 +124,14 @@ function App() {
       <Route exact path="/privacy-policy" component={PrivacyPolicy} />
       <Route exact path="/tos" component={TOS} />
       <Route exact path="/rwby" component={RWBY} />
+      <Route exact path="/full-size-image-m" component={Meredith} />
+      <Route exact path="/timelapse" component={MeredithTimeLapse} />
+      <Route exact path="/full-size-image-r" component={Rapunzel} />
+      <Route exact path="/full-size-image-p" component={POTS} />
+      <Route exact path="/full-size-image-d" component={POD} />
+      <Route exact path="/full-size-image-e" component={EtsyCountdown} />
 
-    </BrowserRouter>
+    </div>
   );
 }
 

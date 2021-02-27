@@ -1,0 +1,214 @@
+{
+    "projects":[
+        {
+            "name": "mima.html",
+            "image": "../images/mima.png",
+            "description": "In the spring of 2020, I had the pleasure of working in a group of 4 to create the Mental Imagery Mobile Application for the IU School of Medicine. My role in this project was to develop the front-end using Angular.",
+            "buttons": [
+                {
+                    "button-name":"View Demo",
+                    "button-href":"https://mima.designsbyandrea.me/"
+                },
+                {
+                    "button-name":"View Github",
+                    "button-href":"https://github.com/aetrigg/MIMA"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Mobile App"
+                },
+                {
+                    "tag-name": "Front-End Development"
+                }
+            ]
+        },
+        {
+            "name": "academy-conference.html",
+            "image": "../images/academy-conference.png",
+            "description": "A simple homework assignment that pulls data from both a JSON file utilizing Firebase and from a PHP database. The concept behind the assignment was to create a conference website, and I created mine based after my sorority, Alpha Sigma Alpha, and their annual conference, The Academy.",
+            "buttons": [
+                {
+                    "button-name": "View Website",
+                    "button-href": "https://academyconference.designsbyandrea.me/"
+                },
+                {
+                    "button-name": "View Github",
+                    "button-href":"https://github.com/aetrigg/academyConference"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Web Design"
+                },
+                {
+                    "tag-name": "Front-End Development"
+                },
+                {
+                    "tag-name": "Back-End Development"
+                }
+            ]
+        },
+        {
+            "name": "portfolio-1.0.html",
+            "image": "../images/portfolio-1.0.png",
+            "description": "Behold, my first portfolio website! This was my first attempt at showing off my front-end skills with lots of animations using jQuery and not much else. While it is quite outdated, I like to keep it around to show how far I’ve come as a designer and developer. Be aware that this website is NOT MOBILE RESPONSIVE.",
+            "buttons": [
+                {
+                    "button-name":"View Website",
+                    "button-href": "https://aetrigg.github.io/portfolioWebsite"
+                },
+                {
+                    "button-name": "View Github",
+                    "button-href": "https://github.com/aetrigg/portfolioWebsite"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name":"Web Design"
+                },
+                {
+                    "tag-name": "Front-End Development"
+                }
+            ]
+        },
+        {
+            "name": "andrea-designs.html",
+            "image": "../images/andrea-designs.png",
+            "description": "My biggest obsession, Andrea Designs is my personal brand and is what you’re looking at right now! I put a lot of time and effort behind my personal brand and I want to share all the little, unique details that makes this brand ME!",
+            "buttons": [
+                {
+                    "button-name":"View Project Details",
+                    "button-href": "https://behance.net/designsbyandrea"
+                },
+                {
+                    "button-name": "View Github",
+                    "button-href": "https://github.com/aetrigg/andrea-designs"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Brand Identity"
+                },
+                {
+                    "tag-name": "Front-End Development"
+                },
+                {
+                    "tag-name": "Back-End Development"
+                },
+                {
+                    "tag-name": "Web Design"
+                },
+                {
+                    "tag-name": "Social Media"
+                }
+            ]
+        },
+        {
+            "name": "ts-social-media-audit.html",
+            "image": "../images/taylor-swift.html",
+            "description": "In the spring of 2020, I conducted a social media audit on Taylor Swift for a class assignment. I also compared her social media activity to three other similar celebrities and provided an analysis of what Swift is doing well and what she can do to improve.",
+            "buttons": [
+                {
+                    "button-name": "Download PDF",
+                    "button-href": "../documents/taylor-swift-social-media-audit.pdf"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Social Media"
+                }
+            ]
+        },
+        {
+            "name": "soic-social-media-strategy.html",
+            "image": "../images/soic.png",
+            "description": "In response to the pandemic, I created a social media strategy for the School of Informatics and Computing at IUPUI. I begin with conducting a social media audit of SoIC, followed by competitive audits from SoIC's top three competitors, and wrapping up with a social media content strategy that SoIC can utilize going forward.",
+            "buttons": [
+                {
+                    "button-name": "Download PDF",
+                    "button-href": "../documents/soic-social-media-audit-and-strategy.pdf"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Social Media"
+                }
+            ]
+        },
+        {
+            "name": "meredith-foster-portrait.html",
+            "image": "../images/meredith-foster-portrait.jpg",
+            "description": "A custom digital portrait I made of famous YouTuber stilababe09 (a.k.a. Meredith Foster) for fun in Procreate. The project took about 4 hours to create.",
+            "buttons": [
+                {
+                    "button-name": "View Full Size Image",
+                    "button-href": "/full-size-image-m"
+                },
+                {
+                    "button-name": "View Time Lapse GIF",
+                    "button-href": "/timelapse"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Graphic Design"
+                }
+            ]
+        },
+        {
+            "name": "principles-of-design-poster.html",
+            "image": "../images/principles-of-design.jpg",
+            "description": "To show my knowledge of the Principles of Design, I was tasked to create a poster representing the 9 elements of design.",
+            "buttons": [
+                {
+                    "button-name": "View Full Size Image",
+                    "button-href": "/full-size-image-d"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Graphic Design"
+                }
+            ]
+        },
+        {
+            "name": "pots-social-media-graphic.html",
+            "image": "../images/pots-graphic.jpg",
+            "description": "I designed this social media graphic to raise awareness about Postural Orthostatic Tachycardia Syndrome (POTS). The color teal represents POTS awareness and the graphic was uploaded in October, which is POTS Awareness Month.",
+            "buttons": [
+                {
+                    "button-name": "View Full Size Image",
+                    "button-href": "/full-size-image-p"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Graphic Design"
+                },
+                {
+                    "tag-name":"Social Media"
+                }
+            ]
+        },
+        {
+            "name": "countdown-to-etsy-launch-graphics.html",
+            "image": "../images/countdown.jpg",
+            "description": "A set of 5 digital graphics that I made for social media to announce and countdown the launch of my Etsy shop opening in Procreate. The theme I chose was Apple technology, and each graphic shows this theme in one way or another.",
+            "buttons": [
+                {
+                    "button-name": "View Full Size Images",
+                    "button-href": "/full-size-image-e"
+                }
+            ],
+            "tags": [
+                {
+                    "tag-name": "Social Media"
+                },
+                {
+                    "tag-name": "Graphic Design"
+                }
+            ]
+        }
+    ]
+}

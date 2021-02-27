@@ -1,8 +1,10 @@
-import { React, Component }from "react"
+import { React, Component, useEffect }from "react"
 import '../App.css';
 import smiley from '../assets/black-smiley.svg';
 import { useMediaQuery } from 'react-responsive';
 import Footer from './Footer';
+import Projects from './Projects';
+import {projectData} from '../assets/data/data.js';
 
 //desktop media query component
 const Desktop = ({ children }) => {
@@ -15,22 +17,40 @@ const Mobile = ({ children }) => {
     const isMobile = useMediaQuery({ maxWidth: 991 })
     return isMobile ? children : null
 }
+
+
  
 class Portfolio extends Component{
-    render(){
+    constructor(props){
+        super(props);
+
+        this.state = {
+            myArrays: projectData,
+            tagOptions: [ "Web Design", "Brand Identity", "Graphic Design", "Mobile App", "Front-End", "Back-End", "Social Media", "All"]
+        }
+    }
+    
+    render(
+        
+    ){
         return(
             <div className="responsive-container">
                 <Mobile>
                     <div className="body-mobile">
-                        <div className="container-mobile">
-                            <div className="header contact mobile">
+                        <div className="container-mobile portfolio">
+                            <div className="header portfolio mobile">
                                 <div className="smileys-mobile item-a">
                                 <img src={smiley} className="smiley" alt="smiley" />
                                 <img src={smiley} className="smiley" alt="smiley" />
                                 <img src={smiley} className="smiley" alt="smiley" />
                                 </div>
 
-                                <p className="item-b">contact.html</p>
+                                <p className="item-b">portfolio.html</p>
+                            </div>
+                            
+                            <div className="margins">
+                                <h1 className="mobile">COMING SOON</h1>
+                                <h2 className="mobile">PLEASE VISIT MY PORTFOLIO ON DESKTOP TO VIEW MY PROJECTS, THANK YOU!</h2>
                             </div>
                         </div>
                     </div>
@@ -38,11 +58,31 @@ class Portfolio extends Component{
 
                 <Desktop>
                     <div className="body">
-                        <div className="container">
-                            
+                        <div className="container portfolio">
+                            <div className="header portfolio">
+                                <div className="smileys item-a">
+                                    <img src={smiley} className="smiley" alt="smiley" />
+                                    <img src={smiley} className="smiley" alt="smiley" />
+                                    <img src={smiley} className="smiley" alt="smiley" />
+                                </div>
+
+                                <p className="item-b">portfolio.html</p>
+                            </div>
+
+                            <div className="margins">
+                                <h1>COOL THINGS</h1>
+                                <h2>A SELECT FEW OF MY ABSOLUTE<br/>FAVORITE PROJECTS</h2>
+
+                                <div className="portfolio-container">
+
+                                    <Projects myArrays={this.state.myArrays} />
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Desktop>
+                <Footer />
             </div>
         )
     }
