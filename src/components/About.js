@@ -38,16 +38,18 @@ function About(props) {
               <h2 className="mobile">I'M SO HAPPY YOU STUMBLED UPON<br/>MY LITTLE CORNER OF THE INTERNET</h2>
             </div>
 
-            <div className="mobile-about-container">
-              <div className="me-container-mobile">
-                <div className="header me mobile">
-                  <div className="smileys item-a">
-                    <img src={smiley} className="smiley" alt="smiley" />
-                    <img src={smiley} className="smiley" alt="smiley" />
-                    <img src={smiley} className="smiley" alt="smiley" />
+            <div className="something-mobile">
+              <div className="mobile-about-container">
+                <div className="me-container-mobile">
+                  <div className="header me mobile">
+                    <div className="smileys item-a">
+                      <img src={smiley} className="smiley" alt="smiley" />
+                      <img src={smiley} className="smiley" alt="smiley" />
+                      <img src={smiley} className="smiley" alt="smiley" />
+                    </div>
+  
+                    <p className="item-b">me.jpeg</p>
                   </div>
-
-                  <p className="item-b">me.jpeg</p>
                 </div>
               </div>
             </div>
@@ -58,17 +60,19 @@ function About(props) {
               <p>I got my start in creating early on; first with pencil and paper, then quickly graduating to digital mediums in early 2009. In my free time, I would create graphics and art using the free program GIMP.</p>
             </div>
 
-            <div className="sunset-container-mobile">
-              <div className="header sunset mobile">
-                <div className="smileys item-a">
-                  <img src={smiley} className="smiley" alt="smiley" />
-                  <img src={smiley} className="smiley" alt="smiley" />
-                  <img src={smiley} className="smiley" alt="smiley" />
+            <div className="something-mobile">
+              <div className="sunset-container-mobile">
+                <div className="header sunset mobile">
+                  <div className="smileys item-a">
+                    <img src={smiley} className="smiley" alt="smiley" />
+                    <img src={smiley} className="smiley" alt="smiley" />
+                    <img src={smiley} className="smiley" alt="smiley" />
+                  </div>
+  
+                  <p className="item-b">sunset-waltz.psd</p>
                 </div>
-
-                <p className="item-b">sunset-waltz.psd</p>
               </div>
-            </div>
+            </div >
 
             <div className="paragraph-2-container-mobile">
               <p>I also explored web design and development by making websites in Geocities (man, remember when that existed?) I stepped away from these around 2011 and focused instead on video editing, first in Sony Vegas Pro and moving up to Adobe Premiere Pro and Final Cut Pro. In fact, I loved making videos so much that I spent my first year at Butler University pursuing a degree in it. However, it was a required course in basic HTML and CSS that I found my true passion for web design and development.</p>
@@ -80,40 +84,42 @@ function About(props) {
               <p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
             </div>
 
-            <div className="profile-container-mobile">
-              <div className="header profile mobile">
-                <div className="smileys item-a">
-                  <img src={smiley} className="smiley" alt="smiley" />
-                  <img src={smiley} className="smiley" alt="smiley" />
-                  <img src={smiley} className="smiley" alt="smiley" />
+            <div className="something-mobile">
+              <div className="profile-container-mobile">
+                <div className="header profile mobile">
+                  <div className="smileys item-a">
+                    <img src={smiley} className="smiley" alt="smiley" />
+                    <img src={smiley} className="smiley" alt="smiley" />
+                    <img src={smiley} className="smiley" alt="smiley" />
+                  </div>
+  
+                  <p className="item-b">profile.txt</p>
                 </div>
-
-                <p className="item-b">profile.txt</p>
+  
+                <div className="profile-information-mobile">
+                  <p className="profile-tidbit-mobile">NAME . . . . . ANDREA TRIGG</p>
+                  <p className="profile-tidbit-mobile">ALIASES . . .AETRIGG/PANDEE</p>
+                  <p className="profile-tidbit-mobile">BIRTHDAY . .  NOVEMBER 10TH</p>
+                  <p className="profile-tidbit-mobile">PERSONALITY TYPE . . INFP-T</p>
+                  <p className="profile-tidbit-mobile">ENNEAGRAM TYPE . . . . .4w3</p>
+                  <p className="profile-tidbit-mobile">ASTROLOGY SIGN . . .SCORPIO</p>
+                  <p className="profile-tidbit-mobile">HOGWARTS HOUSE . .RAVENCLAW</p>
+                  <p className="profile-tidbit-mobile">PATRONUS CHARM . .RED PANDA</p>
+                  <p className="profile-tidbit-mobile">FAVE. SEASON . . . . AUTUMN</p>
+                  <p className="profile-tidbit-mobile">FAVE. T.V. SHOW . . . . . .<br/>. . . . . . . BOB'S BURGERS</p>
+                  <p className="profile-tidbit-mobile">FAVE. SONG . . . <a href="https://www.youtube.com/watch?v=9Gb0a8Ie2hM" className="profile-link">CLICK HERE</a></p>
+                  <p className="profile-tidbit-mobile">FAVE. VINE . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link">CLICK HERE</a></p>
+                  <p className="profile-tidbit-mobile">FAVE. WORD . . . . . .YEET</p>
+                </div>
               </div>
+            </div>
 
-              <div className="profile-information-mobile">
-                <p className="profile-tidbit-mobile">NAME . . . . . ANDREA TRIGG</p>
-                <p className="profile-tidbit-mobile">ALIASES . . .AETRIGG/PANDEE</p>
-                <p className="profile-tidbit-mobile">BIRTHDAY . .  NOVEMBER 10TH</p>
-                <p className="profile-tidbit-mobile">PERSONALITY TYPE . . INFP-T</p>
-                <p className="profile-tidbit-mobile">ENNEAGRAM TYPE . . . . .4w3</p>
-                <p className="profile-tidbit-mobile">ASTROLOGY SIGN . . .SCORPIO</p>
-                <p className="profile-tidbit-mobile">HOGWARTS HOUSE . .RAVENCLAW</p>
-                <p className="profile-tidbit-mobile">PATRONUS CHARM . .RED PANDA</p>
-                <p className="profile-tidbit-mobile">FAVE. SEASON . . . . AUTUMN</p>
-                <p className="profile-tidbit-mobile">FAVE. T.V. SHOW . . . . . .<br/>. . . . . . . BOB'S BURGERS</p>
-                <p className="profile-tidbit-mobile">FAVE. SONG . . . <a href="https://www.youtube.com/watch?v=9Gb0a8Ie2hM" className="profile-link">CLICK HERE</a></p>
-                <p className="profile-tidbit-mobile">FAVE. VINE . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link">CLICK HERE</a></p>
-                <p className="profile-tidbit-mobile">FAVE. WORD . . . . . .YEET</p>
-              </div>
-
-              <div className="signature-container-mobile">
-                <img src={signature} alt="signature" />
-              </div>
-
+            <div className="signature-container-mobile">
+              <img src={signature} alt="signature" />
             </div>
           </div>
         </div>
+        <Footer/>
       </Mobile>
 
       <Desktop>

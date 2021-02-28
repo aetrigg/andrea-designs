@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import { positions, Provider as AlertProvider } from 'react-alert';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import Links from './components/Links';
 
 const options = {
   timeout: 3000,
@@ -48,6 +49,7 @@ ReactDOM.render(
           <App />
         </AlertProvider>
       </ScrollToTop>
+      <Route exact path="/links" component={Links} />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
