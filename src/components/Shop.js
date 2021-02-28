@@ -33,7 +33,7 @@ function Shop(){
                         </div>
 
                         <div className="margins">
-                            <h1 className="mobile">COMING SOON</h1>
+                            <h1 className="mobile">COMING <span className="pink-letter">S</span><span className="purple-letter">O</span><span className="yellow-letter">O</span><span className="pink-letter">N</span></h1>
                             <h2 className="mobile">MY SHOP IS UNDER CONSTRUCTION,<br/>BUT HAVE NO FEAR</h2>
 
                             <div className="center">
@@ -72,7 +72,7 @@ function Shop(){
                         </div>
 
                         <div className="margins">
-                            <h1>COMING SOON</h1>
+                            <h1>COMING <span className="pink-letter">S</span><span className="purple-letter">O</span><span className="yellow-letter">O</span><span className="pink-letter">N</span></h1>
                             <h2 className="shop-margin">MY SHOP IS UNDER CONSTRUCTION,<br/>BUT HAVE NO FEAR</h2>
 
                             <div className="center">

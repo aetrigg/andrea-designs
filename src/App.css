@@ -1179,3 +1179,263 @@ h4.h4-tag{
 .container-mobile.portfolio{
   height:auto;
 }
+
+.pink-letter{
+  color:var(--electricity-pink);
+}
+
+.purple-letter{
+  color:var(--electricity-purple);
+}
+
+.yellow-letter{
+  color:var(--electricity-yellow);
+}
+
+.header.about{
+  background-color:var(--electricity-purple);
+}
+
+.container.about{
+  height:110vw;
+  z-index:0;
+  margin-bottom:30vh;
+}
+
+.header.me{
+  width:100% !important;
+  background-color:var(--electricity-yellow);
+}
+
+.me-container{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  height:50vh;
+  width:50%;
+  background-image:url('./assets/me.jpg');
+  background-position-x:0;
+  background-position-y:40%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  float:left;
+  position:relative;
+  z-index:1;
+  margin-right:3vw;
+  margin-left:-10vw;
+  margin-bottom:3vw;
+}
+
+.header.sunset{
+  width:100% !important;
+  background-color:var(--electricity-pink);
+}
+
+.sunset-container{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  height:45vh;
+  width:50%;
+  background-image:url('./assets/sunset-waltz.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  float:right;
+  position:relative;
+  z-index:1;
+  margin-left:1vw;
+  margin-right:-10vw;
+  margin-bottom:1vw;
+  clear:left;
+}
+
+.header.profile{
+  width:100% !important;
+  background-color:var(--electricity-purple);
+}
+
+.profile-container{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  background-color:var(--canvas-white);
+  width:45%;
+  height:auto;
+  float:left;
+  position:relative;
+  clear:both;
+  margin-left:2vw;
+  margin-top:1vw;
+  margin-right:3vw;
+}
+
+.profile-information p{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.25vw;
+  margin-top:0;
+}
+
+.profile-information .profile-link {
+  color:var(--electricity-pink);
+}
+
+.profile-information .profile-link:visited{
+  color:var(--electricity-pink);
+}
+
+.profile-link:visited{
+  color:var(--electricity-pink);
+}
+
+.profile-information .profile-link:hover{
+  color:var(--true-black);
+  transition:0.5s ease;
+}
+
+.profile-information{
+  height:auto;
+  margin:5% 0px 2%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.paragraph-container p {
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.25vw;
+}
+
+.paragraph-container{
+  padding-right:5vw;
+  position:relative;
+  padding-left:5vw;
+  z-index:0;
+}
+
+.grid-about{
+  width:100%;
+  height:100vh;
+}
+
+.signature-container img{
+  width:30%;
+}
+
+.header.about.mobile{
+  background-color:var(--electricity-purple);
+}
+
+.container-mobile.about{
+  height:375vh;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-content:center;
+  align-items:center;
+}
+
+.header.me.mobile{
+  width:100% !important;
+  background-color:var(--electricity-yellow);
+}
+
+.header.sunset.mobile{
+  width:100% !important;
+  background-color:var(--electricity-pink);
+}
+
+.header.profile.mobile{
+  width:100% !important;
+  background-color:var(--electricity-purple);
+}
+
+.header.mobile{
+  grid-template-columns: 15vw auto;
+}
+
+.header.mobile .item-a{
+  display:flex;
+  justify-content:flex-start;
+}
+
+.header.mobile .item-a .smiley{
+  padding-right:10px;
+}
+
+.me-container-mobile{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  height:40vh;
+  width:67vw;
+  background-image:url('./assets/me.jpg');
+  background-repeat:no-repeat;
+  background-position-x:0vh;
+  background-position-y:30%;
+  background-size:cover;
+  margin-top:-7vh;
+}
+
+.sunset-container-mobile{
+  border:var(--border);
+  box-shadow: var(--drop-shadow);
+  height:30vh;
+  width:67vw;
+  background-image:url('./assets/sunset-waltz.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.profile-container-mobile{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  height:70vh;
+  width:67vw;
+  background-color:var(--canvas-white);
+}
+
+.profile-information-mobile{
+  height:auto;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  padding:3.5% 3.5%;
+}
+
+.profile-information-mobile p{
+  font-family:"Anonymous Pro";
+  font-size:2.3vh;
+  font-weight:600;
+  color:var(--true-black);
+}
+
+.profile-tidbit-mobile{
+  margin:3% 0px;
+}
+
+.paragraph-1-container-mobile, .paragraph-2-container-mobile{
+  margin:2vh 3vh;
+}
+
+.paragraph-1-container-mobile p, .paragraph-2-container-mobile p{
+  font-family:"Anonymous Pro";
+  font-size:2vh;
+  font-weight:600;
+  color:var(--true-black);
+}
+
+.signature-container-mobile img{
+  width:90%;
+}
+
+.signature-container-mobile{
+  margin-top:2vh;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  margin-top:15%;
+}

@@ -89,7 +89,7 @@ class Contact extends React.Component{
                 </div>
         
                 <div className="margins">
-                <h1 className="mobile">LET'S GET TO WORK</h1>
+                <h1 className="mobile">LET'S GET TO <span className="pink-letter">W</span><span className="purple-letter">O</span><span className="yellow-letter">R</span><span className="pink-letter">K</span></h1>
                 <h2 className="mobile">CALL ME, BEEP ME, IF YOU WANNA REACH ME, FILL OUT THE FORM BELOW</h2>
         
                 <div className="center">
@@ -138,7 +138,7 @@ class Contact extends React.Component{
                 </div>
         
                 <div className="margins">
-                <h1>LET'S GET TO WORK</h1>
+                <h1>LET'S GET TO <span className="pink-letter">W</span><span className="purple-letter">O</span><span className="yellow-letter">R</span><span className="pink-letter">K</span></h1>
                 <h2>CALL ME, BEEP ME, IF YOU WANNA REACH ME, FILL OUT THE FORM BELOW</h2>
         
                 <div className="center">

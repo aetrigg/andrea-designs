@@ -70,7 +70,7 @@ class Portfolio extends Component{
                             </div>
 
                             <div className="margins">
-                                <h1>COOL THINGS</h1>
+                                <h1><span className="pink-letter">C</span><span className="purple-letter">O</span><span className="yellow-letter">O</span><span className="pink-letter">L</span> THINGS</h1>
                                 <h2>A SELECT FEW OF MY ABSOLUTE<br/>FAVORITE PROJECTS</h2>
 
                                 <div className="portfolio-container">

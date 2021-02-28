@@ -34,7 +34,7 @@ class TOS extends Component{
                       </div>
 
                       <div className="margins">
-                        <h1 className="mobile">TERMS OF SERVICE</h1>
+                        <h1 className="mobile">TERMS OF <span className="pink-letter">S</span><span className="purple-letter">E</span><span className="yellow-letter">R</span><span className="pink-letter">V</span><span className="purple-letter">I</span><span className="yellow-letter">C</span><span className="pink-letter">E</span></h1>
                         <h2 className="mobile tos">WELCOME TO ANDREA DESIGNS!</h2>
 
                         <div className="center margins2">
@@ -175,7 +175,7 @@ class TOS extends Component{
                       </div>
 
                       <div className="margins">
-                        <h1>TERMS OF SERVICE</h1>
+                        <h1>TERMS OF <span className="pink-letter">S</span><span className="purple-letter">E</span><span className="yellow-letter">R</span><span className="pink-letter">V</span><span className="purple-letter">I</span><span className="yellow-letter">C</span><span className="pink-letter">E</span></h1>
                         <h2>WELCOME TO ANDREA DESIGNS!</h2>
 
                         <div className="center">

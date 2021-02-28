@@ -60,7 +60,7 @@ export const projectData = [
         "buttons": [
             {
                 "buttonName": "View Website",
-                "buttonHref": "https://academyconference.designsbyandrea.me/",
+                "buttonHref": "http://academyconference.designsbyandrea.me/",
                 "buttonColor":"#CD99EB"
             },
             {

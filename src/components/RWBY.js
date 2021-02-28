@@ -34,7 +34,7 @@ class RWBY extends Component{
                             </div>
 
                             <div className="margins rwby">
-                                <h1 className="mobile rwby">THE UNIQUENESS OF RWBY</h1>
+                                <h1 className="mobile rwby">THE <span className="pink-letter">U</span><span className="purple-letter">N</span><span className="yellow-letter">I</span><span className="pink-letter">Q</span><span className="purple-letter">U</span><span className="yellow-letter">E</span><span className="pink-letter">N</span><span className="purple-letter">E</span><span className="yellow-letter">S</span><span className="pink-letter">S</span> OF RWBY</h1>
                                 <h2 className="mobile rwby">AS FEATURED IN BUTLER UNIVERSITY'S <i><u>THE MALL</u></i></h2>
 
                                 <div className="center">
@@ -196,7 +196,7 @@ class RWBY extends Component{
                             </div>
 
                             <div className="margins rwby">
-                                <h1 className="rwby">THE UNIQUENESS OF RWBY</h1>
+                                <h1 className="rwby">THE <span className="pink-letter">U</span><span className="purple-letter">N</span><span className="yellow-letter">I</span><span className="pink-letter">Q</span><span className="purple-letter">U</span><span className="yellow-letter">E</span><span className="pink-letter">N</span><span className="purple-letter">E</span><span className="yellow-letter">S</span><span className="pink-letter">S</span> OF RWBY</h1>
                                 <h2 className="rwby">AS FEATURED IN BUTLER UNIVERSITY'S <u><i>THE MALL</i></u></h2>
 
                                 <div className="center">

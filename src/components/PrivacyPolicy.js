@@ -34,7 +34,7 @@ class PrivacyPolicy extends Component{
                             </div>
 
                             <div className="margins">
-                                <h1 className="mobile">PRIVACY POLICY</h1>
+                                <h1 className="mobile"><span className="pink-letter">P</span><span className="purple-letter">R</span><span className="yellow-letter">I</span><span className="pink-letter">V</span><span className="purple-letter">A</span><span className="yellow-letter">C</span><span className="pink-letter">Y</span> POLICY</h1>
                                 <h2 className="mobile privacy">FOR ANDREA DESIGNS</h2>
 
                                 <div className="center margins2">
@@ -95,7 +95,7 @@ class PrivacyPolicy extends Component{
                             </div>
 
                             <div className="margins">
-                                <h1>PRIVACY POLICY</h1>
+                                <h1><span className="pink-letter">P</span><span className="purple-letter">R</span><span className="yellow-letter">I</span><span className="pink-letter">V</span><span className="purple-letter">A</span><span className="yellow-letter">C</span><span className="pink-letter">Y</span> POLICY</h1>
                                 <h2>FOR ANDREA DESIGNS</h2>
 
                                 <div className="center">
