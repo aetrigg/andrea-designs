@@ -8,7 +8,7 @@ const port = 4444;
 app.use(cors());
 app.use(express.json());
 
-app.use('/sendmail', require('./sendMail.js'))
+app.use('/sendmail', require('./sendmail.js'))
 
 
 app.listen(port, () => {

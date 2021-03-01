@@ -50,7 +50,7 @@ class Contact extends React.Component{
         e.preventDefault();
         axios({
             method: "POST",
-            url: "http://localhost:4444/sendmail",
+            url: "/api/sendmail",
             data: this.state
         }).then((response)=>{
             if(response.data.status === 'success'){
@@ -104,7 +104,7 @@ class Contact extends React.Component{
                     <p className="item-b">contact-form.php</p>
                   </div>
         
-                  <form id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST">
+                  <form data-netlify="true" id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form-mobile">
         
                     <input placeholder="Name" id="name" type="text" className="inputForm-mobile item-f" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
         
@@ -153,7 +153,7 @@ class Contact extends React.Component{
                       <p className="item-b">contact-form.php</p>
                     </div>
           
-                    <form id="contact-form" onSubmit={this.submitEmail.bind(this)} method="POST">
+                    <form data-netlify="true" id="contact-form" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form">
 
                         <input placeholder="Name" id="name" type="text" className="inputForm item-f margin-bottom" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
 
