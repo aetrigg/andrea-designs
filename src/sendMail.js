@@ -1,6 +1,7 @@
 const express = require('express');
 const sendMailRouter = express.Router();
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 module.exports = sendMailRouter;
 
