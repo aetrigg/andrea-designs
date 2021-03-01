@@ -74,12 +74,14 @@ class Contact extends React.Component{
     }*/
 
     handleSubmit = e => {
+      const alert = this.props.alert;
+
       fetch('/contact', {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact-form", ...this.state })
       })
-      .then(()=> alert.show('Message Successfully Sent!'))
+      .then(()=> alert.show('Message Sent!'))
       .catch(error => alert.show(error));
 
       e.preventDefault();
