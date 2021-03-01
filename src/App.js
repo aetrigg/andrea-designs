@@ -19,6 +19,11 @@ import Rapunzel from './components/Rapunzel';
 import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './components/RouteChangeTracker';
+
+const TRACKING_ID = "UA-188628664-1"
+ReactGA.initialize(TRACKING_ID);
 
 
 //desktop media query component
@@ -130,6 +135,7 @@ function App() {
       <Route exact path="/full-size-image-p" component={POTS} />
       <Route exact path="/full-size-image-d" component={POD} />
       <Route exact path="/full-size-image-e" component={EtsyCountdown} />
+      <RouteChangeTracker />
 
     </div>
   );
