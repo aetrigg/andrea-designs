@@ -1463,16 +1463,6 @@ h4.h4-tag{
   height:87vh;
 }
 
-.links-page-button-container-mobile{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  height:75vh;
-  align-content:center;
-  align-items:center;
-}
-
 .links-page-button{
   width:100%;
   height:4vh;
@@ -1483,49 +1473,39 @@ h4.h4-tag{
   align-items:center;
 }
 
-.links-page-button-mobile{
-  width:90%;
-  height:4vh;
-  border:var(--border);
-  display:flex;
-  justify-content:center;
-  align-content:center;
-  align-items:center;
-}
-
-.links-page-button.yellow, .links-page-button-mobile.yellow{
+.links-page-button.yellow{
   background-color:var(--electricity-yellow);
 }
 
-.links-page-button.pink, .links-page-button-mobile.pink{
+.links-page-button.pink{
   background-color:var(--electricity-pink);
 }
 
-.links-page-button.purple, .links-page-button-mobile.purple{
+.links-page-button.purple{
   background-color:var(--electricity-purple);
 }
 
-.links-page-button.yellow:hover, .links-page-button-mobile.yellow:hover{
+.links-page-button.yellow:hover{
   background-color:var(--true-black);
   transition:0.5s ease;
 }
 
-.links-page-button.pink:hover, .links-page-button-mobile.pink:hover{
+.links-page-button.pink:hover{
   background-color:var(--true-black);
   transition:0.5s ease;
 }
 
-.links-page-button.purple:hover, .links-page-button-mobile.purple:hover{
+.links-page-button.purple:hover{
   background-color:var(--true-black);
   transition:0.5s ease;
 }
 
-.links-page-button-container a:hover, .links-page-button-container-mobile a:hover{
+.links-page-button-container a:hover{
   color:var(--canvas-white);
   transition:0.5s ease;
 }
 
-.links-page-button-container a, .links-page-button-container-mobile a{
+.links-page-button-container a{
   color:var(--true-black);
   text-decoration:none;
   font-family:"Anonymous Pro";
@@ -1535,22 +1515,4 @@ h4.h4-tag{
 
 .links.header{
   background-color:var(--electricity-purple);
-}
-
-.links.header.mobile{
-  background-color:var(--electricity-purple);
-}
-
-.links.container{
-  height:auto;
-  margin-top:8vh;
-}
-
-.links.container-mobile{
-  margin-top:5vh;
-  height:auto;
-}
-
-.no-navigation{
-  margin-top:0px;
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Link, NavLink } from 'react-router-dom';
 import { ReactHamburger } from 'react-hamburger';
 import primaryLogo from './assets/primaryLogo-01.svg';
 import { useMediaQuery } from 'react-responsive';
@@ -19,7 +19,7 @@ import Rapunzel from './components/Rapunzel';
 import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
-import Links from './components/Links';
+
 
 //desktop media query component
 const Desktop = ({ children }) => {
@@ -70,82 +70,69 @@ class Navigation extends React.Component{
   }
 }
 
-class App extends React.Component {
+function App() {
+  return (
+    <div className="PersonalApp">
 
-  render(){
-    if(window.location.href === "http://localhost:3000/links"){
-      //do not show navigation link
-      return(
-        <div className="no-navigation">
-          <Route exact to="/links" component={Links} />
+      <Mobile>
+        <ReactHamburger 
+          barColor={"#000"} 
+          barRadius={0} 
+          inline={true}
+          locked={true}
+          right={true}
+          linkContainerColor={"#fcfbfb"}
+          linkContainerMaxWidth={300}
+          linkContainerWidth={100}
+          verticalSlide={true}
+          showTopBar={true}
+          topBarColor={"#FF99B0"}
+          topBarGutter={-100}
+          className={"border-bottom"}
+          TopContent={<img src={primaryLogo} className="logo-mobile"></img>}
+        >
+          <Navigation className="navigation">
+            <NavigationLink activeClassName="active" className="navigation-link" name={"home"} value={"HOME"} />
+            <NavigationLink activeClassName="active" className="navigation-link" name={"about"} value={"ABOUT"} />
+            <NavigationLink activeClassName="active" className="navigation-link" name={"portfolio"} value={"PORTFOLIO"} />
+            <NavigationLink className="navigation-link" name={"shop"} value={"SHOP"} />
+            <NavigationLink activeClassName="active" className="navigation-link" name={"contact"} value={"CONTACT"} />
+          </Navigation>
+        </ReactHamburger>
+      </Mobile>
+
+      <Desktop>
+        <div className="navigation-desktop">
+          <img src={primaryLogo} className="logo" />
+
+          <div className="navigation-links">
+            <NavLink exact activeClassName="active" to="/" className="item">HOME</NavLink>
+            <NavLink exact activeClassName="active" to="/about" className="item">ABOUT</NavLink>
+            <NavLink exact activeClassName="active" to="/portfolio" className="item">PORTFOLIO</NavLink>
+            <NavLink exact activeClassName="active" to="/shop" className="item">SHOP</NavLink>
+            <NavLink exact activeClassName="active" to="/contact" className="item">CONTACT</NavLink>
+          </div>
         </div>
-      )
-    }else{
-      //show navigation link
-      return (
-        <div className="PersonalApp">
-    
-          <Mobile>
-            <ReactHamburger 
-              barColor={"#000"} 
-              barRadius={0} 
-              inline={true}
-              locked={true}
-              right={true}
-              linkContainerColor={"#fcfbfb"}
-              linkContainerMaxWidth={300}
-              linkContainerWidth={100}
-              verticalSlide={true}
-              showTopBar={true}
-              topBarColor={"#FF99B0"}
-              topBarGutter={-100}
-              className={"border-bottom"}
-              TopContent={<img src={primaryLogo} className="logo-mobile"></img>}
-            >
-              <Navigation className="navigation">
-                <NavigationLink activeClassName="active" className="navigation-link" name={"home"} value={"HOME"} />
-                <NavigationLink activeClassName="active" className="navigation-link" name={"about"} value={"ABOUT"} />
-                <NavigationLink activeClassName="active" className="navigation-link" name={"portfolio"} value={"PORTFOLIO"} />
-                <NavigationLink className="navigation-link" name={"shop"} value={"SHOP"} />
-                <NavigationLink activeClassName="active" className="navigation-link" name={"contact"} value={"CONTACT"} />
-              </Navigation>
-            </ReactHamburger>
-          </Mobile>
-    
-          <Desktop>
-            <div className="navigation-desktop">
-              <img src={primaryLogo} className="logo" />
-    
-              <div className="navigation-links">
-                <NavLink exact activeClassName="active" to="/" className="item">HOME</NavLink>
-                <NavLink exact activeClassName="active" to="/about" className="item">ABOUT</NavLink>
-                <NavLink exact activeClassName="active" to="/portfolio" className="item">PORTFOLIO</NavLink>
-                <NavLink exact activeClassName="active" to="/shop" className="item">SHOP</NavLink>
-                <NavLink exact activeClassName="active" to="/contact" className="item">CONTACT</NavLink>
-              </div>
-            </div>
-          </Desktop>
-    
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/shop" component={Shop} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-          <Route exact path="/tos" component={TOS} />
-          <Route exact path="/rwby" component={RWBY} />
-          <Route exact path="/full-size-image-m" component={Meredith} />
-          <Route exact path="/timelapse" component={MeredithTimeLapse} />
-          <Route exact path="/full-size-image-r" component={Rapunzel} />
-          <Route exact path="/full-size-image-p" component={POTS} />
-          <Route exact path="/full-size-image-d" component={POD} />
-          <Route exact path="/full-size-image-e" component={EtsyCountdown} />
-    
-        </div>
-      );
-    }
-  }
+      </Desktop>
+
+      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/shop" component={Shop} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+      <Route exact path="/tos" component={TOS} />
+      <Route exact path="/rwby" component={RWBY} />
+      <Route exact path="/full-size-image-m" component={Meredith} />
+      <Route exact path="/timelapse" component={MeredithTimeLapse} />
+      <Route exact path="/full-size-image-r" component={Rapunzel} />
+      <Route exact path="/full-size-image-p" component={POTS} />
+      <Route exact path="/full-size-image-d" component={POD} />
+      <Route exact path="/full-size-image-e" component={EtsyCountdown} />
+
+    </div>
+  );
 }
 
-export default withRouter(App);
+export default App;

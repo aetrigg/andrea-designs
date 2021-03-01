@@ -49,6 +49,7 @@ ReactDOM.render(
           <App />
         </AlertProvider>
       </ScrollToTop>
+      <Route exact path="/links" component={Links} />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
