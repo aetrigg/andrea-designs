@@ -46,7 +46,7 @@ class Contact extends React.Component{
         this.setState({ message: event.target.value })
     }
 
-    submitEmail(e){
+    /*submitEmail(e){
         e.preventDefault();
         axios({
             method: "POST",
@@ -65,6 +65,18 @@ class Contact extends React.Component{
                 //alert("Message failed to send.");
             }
         })
+    }*/
+
+    handleSubmit = e => {
+      fetch('/contact', {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact-form", ...this.state })
+      })
+      .then(()=> { alert.show('Message Successfully Sent!'), this.resetForm() })
+      .catch(error => alert.show(error));
+
+      e.preventDefault();
     }
 
     resetForm(){
@@ -104,7 +116,7 @@ class Contact extends React.Component{
                     <p className="item-b">contact-form.php</p>
                   </div>
         
-                  <form id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form-mobile">
+                  <form id="contact-form-mobile" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form">
 
                     <input type="hidden" name="form-name" value="contact-form-mobile" />
         
