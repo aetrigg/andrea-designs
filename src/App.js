@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Link, NavLink, Router } from 'react-router-dom';
 import { ReactHamburger } from 'react-hamburger';
 import primaryLogo from './assets/primaryLogo-01.svg';
 import { useMediaQuery } from 'react-responsive';
-import Home from './components/Home';
+/*import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -18,7 +18,7 @@ import MeredithTimeLapse from './components/MeredithTimeLapse';
 import Rapunzel from './components/Rapunzel';
 import POTS from './components/POTS';
 import POD from './components/POD';
-import EtsyCountdown from './components/EtsyCountdown';
+import EtsyCountdown from './components/EtsyCountdown';*/
 import ReactGA from 'react-ga';
 //import RouteChangeTracker from './components/RouteChangeTracker';
 //import withTracker from './components/withTracker';
@@ -122,22 +122,6 @@ function App() {
           </div>
         </div>
       </Desktop>
-      
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-        <Route exact path="/tos" component={TOS} />
-        <Route exact path="/rwby" component={RWBY} />
-        <Route exact path="/full-size-image-m" component={Meredith} />
-        <Route exact path="/timelapse" component={MeredithTimeLapse} />
-        <Route exact path="/full-size-image-r" component={Rapunzel} />
-        <Route exact path="/full-size-image-p" component={POTS} />
-        <Route exact path="/full-size-image-d" component={POD} />
-        <Route exact path="/full-size-image-e" component={EtsyCountdown} />
 
     </div>
   );
