@@ -174,7 +174,7 @@ class Contact extends React.Component{
                       <p className="item-b">contact-form.php</p>
                     </div>
           
-                    <form id="contact-form" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form">
+                    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form">
 
                         <input type="hidden" name="form-name" value="contact-form" />
 
