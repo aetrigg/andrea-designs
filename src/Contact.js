@@ -104,15 +104,17 @@ class Contact extends React.Component{
                     <p className="item-b">contact-form.php</p>
                   </div>
         
-                  <form data-netlify="true" id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form-mobile">
-        
-                    <input placeholder="Name" id="name" type="text" className="inputForm-mobile item-f" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
-        
-                    <input placeholder="Email" id="email" type="text" className="inputForm-mobile item-g" required value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                  <form id="contact-form-mobile" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form-mobile">
 
-                    <input placeholder="Subject" id="subject" type="text" className="inputForm-mobile item-h" required value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+                    <input type="hidden" name="form-name" value="contact-form-mobile" />
         
-                    <textarea placeholder="Message" id="message" className="textareaForm-mobile item-i" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                    <input placeholder="Name" name="name" id="name" type="text" className="inputForm-mobile item-f" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
+        
+                    <input placeholder="Email" name="email" id="email" type="text" className="inputForm-mobile item-g" required value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+
+                    <input placeholder="Subject" name="subject" id="subject" type="text" className="inputForm-mobile item-h" required value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+        
+                    <textarea placeholder="Message" name="message" id="message" className="textareaForm-mobile item-i" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
         
                     <button type="submit" className="submitBtn-mobile item-j">Submit</button>
         
@@ -153,15 +155,17 @@ class Contact extends React.Component{
                       <p className="item-b">contact-form.php</p>
                     </div>
           
-                    <form data-netlify="true" id="contact-form" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form">
+                    <form id="contact-form" onSubmit={this.submitEmail.bind(this)} method="POST" name="contact-form">
 
-                        <input placeholder="Name" id="name" type="text" className="inputForm item-f margin-bottom" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                        <input type="hidden" name="form-name" value="contact-form" />
 
-                        <input placeholder="Email" id="email" type="text" className="inputForm item-g margin-bottom" required value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                        <input name="name" placeholder="Name" id="name" type="text" className="inputForm item-f margin-bottom" required value={this.state.name} onChange={this.onNameChange.bind(this)} />
 
-                      <input placeholder="Subject" id="subject" type="text" className="inputForm margin-bottom item-h" required value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+                        <input name="email" placeholder="Email" id="email" type="text" className="inputForm item-g margin-bottom" required value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+
+                      <input name="subject" placeholder="Subject" id="subject" type="text" className="inputForm margin-bottom item-h" required value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
           
-                      <textarea placeholder="Enter your message here" id="message" className="textareaForm margin-bottom item-i" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                      <textarea name="message" placeholder="Enter your message here" id="message" className="textareaForm margin-bottom item-i" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           
                       <button type="submit" className="submitBtn item-j">Submit</button>
           
