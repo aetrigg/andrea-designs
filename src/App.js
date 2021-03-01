@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Route, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Link, NavLink, Router } from 'react-router-dom';
 import { ReactHamburger } from 'react-hamburger';
 import primaryLogo from './assets/primaryLogo-01.svg';
 import { useMediaQuery } from 'react-responsive';
@@ -20,10 +20,22 @@ import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
 import ReactGA from 'react-ga';
-import RouteChangeTracker from './components/RouteChangeTracker';
+//import RouteChangeTracker from './components/RouteChangeTracker';
+//import withTracker from './components/withTracker';
+import createHistory from 'history/createBrowserHistory';
 
+
+//Google Analytics init
 const TRACKING_ID = "UA-188628664-1"
 ReactGA.initialize(TRACKING_ID);
+
+
+//how to track page views in Google Analytics
+const history = createHistory()
+history.listen((location, action) => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
 
 
 //desktop media query component
@@ -120,22 +132,23 @@ function App() {
         </div>
       </Desktop>
 
-      <Route exact path="/" component={Home} />
-      <Route exact path="/home" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/portfolio" component={Portfolio} />
-      <Route exact path="/shop" component={Shop} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-      <Route exact path="/tos" component={TOS} />
-      <Route exact path="/rwby" component={RWBY} />
-      <Route exact path="/full-size-image-m" component={Meredith} />
-      <Route exact path="/timelapse" component={MeredithTimeLapse} />
-      <Route exact path="/full-size-image-r" component={Rapunzel} />
-      <Route exact path="/full-size-image-p" component={POTS} />
-      <Route exact path="/full-size-image-d" component={POD} />
-      <Route exact path="/full-size-image-e" component={EtsyCountdown} />
-      <RouteChangeTracker />
+      <Router history={history}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/shop" component={Shop} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+        <Route exact path="/tos" component={TOS} />
+        <Route exact path="/rwby" component={RWBY} />
+        <Route exact path="/full-size-image-m" component={Meredith} />
+        <Route exact path="/timelapse" component={MeredithTimeLapse} />
+        <Route exact path="/full-size-image-r" component={Rapunzel} />
+        <Route exact path="/full-size-image-p" component={POTS} />
+        <Route exact path="/full-size-image-d" component={POD} />
+        <Route exact path="/full-size-image-e" component={EtsyCountdown} />
+      </Router>
 
     </div>
   );
