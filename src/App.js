@@ -22,20 +22,11 @@ import EtsyCountdown from './components/EtsyCountdown';
 import ReactGA from 'react-ga';
 //import RouteChangeTracker from './components/RouteChangeTracker';
 //import withTracker from './components/withTracker';
-import createHistory from 'history/createBrowserHistory';
 
 
 //Google Analytics init
 const TRACKING_ID = "UA-188628664-1"
 ReactGA.initialize(TRACKING_ID);
-
-
-//how to track page views in Google Analytics
-const history = createHistory()
-history.listen((location, action) => {
-  ReactGA.set({ page: location.pathname });
-  ReactGA.pageview(location.pathname);
-});
 
 
 //desktop media query component
@@ -131,8 +122,7 @@ function App() {
           </div>
         </div>
       </Desktop>
-
-      <Router history={history}>
+      
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/about" component={About} />
@@ -148,7 +138,6 @@ function App() {
         <Route exact path="/full-size-image-p" component={POTS} />
         <Route exact path="/full-size-image-d" component={POD} />
         <Route exact path="/full-size-image-e" component={EtsyCountdown} />
-      </Router>
 
     </div>
   );

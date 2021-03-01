@@ -7,6 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Links from './components/Links';
+import createHistory from 'history/createBrowserHistory';
+import ReactGA from 'react-ga';
+
+//how to track page views in Google Analytics
+const history = createHistory()
+history.listen((location, action) => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
 
 const options = {
   timeout: 3000,
@@ -43,7 +52,7 @@ const AlertTemplate = ({ options, message, close }) => (
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router history={history}>
       <ScrollToTop>
         <AlertProvider template={AlertTemplate} {...options}>
           <App />
