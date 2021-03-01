@@ -14,8 +14,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
-import Contact from './Contact';
 import Shop from './components/Shop.js';
+import Contact from './Contact.js';
 import PrivacyPolicy from './components/PrivacyPolicy.js';
 import TOS from './components/TOS';
 import RWBY from './components/RWBY';
@@ -98,13 +98,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={history}>
       <ScrollToTop>
-        <AlertProvider template={AlertTemplate} {...options}>
           <App />
-        </AlertProvider>
       </ScrollToTop>
       <Route exact path="/links" component={Links} />
 
       <AnalyticsTracker />
+      <AlertProvider template={AlertTemplate} {...options}>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
@@ -122,6 +121,7 @@ ReactDOM.render(
         <Route exact path="/full-size-image-d" component={POD} />
         <Route exact path="/full-size-image-e" component={EtsyCountdown} />
       </Switch>
+      </AlertProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
