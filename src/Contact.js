@@ -18,6 +18,12 @@ const Mobile = ({ children }) => {
   return isMobile ? children : null
 }
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Contact extends React.Component{
     constructor(props){
         super(props);
@@ -73,10 +79,11 @@ class Contact extends React.Component{
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact-form", ...this.state })
       })
-      .then(()=> { alert.show('Message Successfully Sent!'), this.resetForm() })
+      .then(()=> alert.show('Message Successfully Sent!'))
       .catch(error => alert.show(error));
 
       e.preventDefault();
+      this.resetForm();
     }
 
     resetForm(){
