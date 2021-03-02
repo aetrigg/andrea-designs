@@ -7,8 +7,10 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Links from './components/Links';
-import createHistory from 'history/createBrowserHistory';
-import ReactGA from 'react-ga';
+//import createHistory from 'history/createBrowserHistory';
+//import ReactGA from 'react-ga';
+//import {PropTypes} from 'prop-types'
+import GAListener from './components/GAListener';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -26,7 +28,7 @@ import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
 
-class Analytics extends React.Component<RouteComponentProps<any>> {
+/*class Analytics extends React.Component<RouteComponentProps<any>> {
   componentDidMount() {
     this.sendPageChange(this.props.location.pathname, this.props.location.search)
   }
@@ -59,7 +61,7 @@ const history = createHistory()
 history.listen((location, action) => {
   ReactGA.set({ page: location.pathname });
   ReactGA.pageview(location.pathname);
-});
+});*/
 
 const options = {
   timeout: 3000,
@@ -96,32 +98,33 @@ const AlertTemplate = ({ options, message, close }) => (
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
-      <ScrollToTop>
-          <App />
-      </ScrollToTop>
-      <Route exact path="/links" component={Links} />
-
-      <AnalyticsTracker />
-      <AlertProvider template={AlertTemplate} {...options}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-        <Route exact path="/tos" component={TOS} />
-        <Route exact path="/rwby" component={RWBY} />
-        <Route exact path="/full-size-image-m" component={Meredith} />
-        <Route exact path="/timelapse" component={MeredithTimeLapse} />
-        <Route exact path="/full-size-image-r" component={Rapunzel} />
-        <Route exact path="/full-size-image-p" component={POTS} />
-        <Route exact path="/full-size-image-d" component={POD} />
-        <Route exact path="/full-size-image-e" component={EtsyCountdown} />
-      </Switch>
-      </AlertProvider>
+    <Router>
+      <GAListener trackingId="UA-188628664-1">
+        <ScrollToTop>
+            <App />
+        </ScrollToTop>
+        <Route exact path="/links" component={Links} />
+  
+        <AlertProvider template={AlertTemplate} {...options}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/shop" component={Shop} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+          <Route exact path="/tos" component={TOS} />
+          <Route exact path="/rwby" component={RWBY} />
+          <Route exact path="/full-size-image-m" component={Meredith} />
+          <Route exact path="/timelapse" component={MeredithTimeLapse} />
+          <Route exact path="/full-size-image-r" component={Rapunzel} />
+          <Route exact path="/full-size-image-p" component={POTS} />
+          <Route exact path="/full-size-image-d" component={POD} />
+          <Route exact path="/full-size-image-e" component={EtsyCountdown} />
+        </Switch>
+        </AlertProvider>
+      </GAListener>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

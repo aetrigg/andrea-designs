@@ -15,6 +15,8 @@ const Desktop = ({ children }) => {
     const isMobile = useMediaQuery({ maxWidth: 991 })
     return isMobile ? children : null
   }
+
+var ReactGA = require('react-ga');
  
 function Footer(props) {
   return (
@@ -25,7 +27,7 @@ function Footer(props) {
                 <div className="footer-desktop-important">
                     <Link className="footer-link" exact to="/privacy-policy">PRIVACY POLICY</Link>
                     <Link className="footer-link" exact to="/tos">TERMS OF SERVICE</Link>
-                    <a className="footer-link" href={ResumePDF} target="_blank">RESUME</a>
+                    <ReactGA.OutboundLink className="footer-link" eventLabel="footer-resume" to={ResumePDF} target="_blank"><a className="footer-link" href={ResumePDF} target="_blank">RESUME</a></ReactGA.OutboundLink>
                     <Link className="footer-link" exact to="/rwby">RWBY PAPER</Link>
                 </div>
 
@@ -51,7 +53,7 @@ function Footer(props) {
                 <div className="footer-mobile-important">
                     <Link className="footer-link-mobile" exact to='/privacy-policy'>PRIVACY POLICY</Link>
                     <Link className="footer-link-mobile" exact to='/tos'>TERMS OF SERVICE</Link>
-                    <a href={ResumePDF} target="_blank" className="footer-link-mobile">RESUME</a>
+                    <ReactGA.OutboundLink className="footer-link-mobile" eventLabel="footer-resume" to={ResumePDF} target="_blank"><a className="footer-link-mobile" href={ResumePDF} target="_blank">RESUME</a></ReactGA.OutboundLink>
                     <Link className="footer-link-mobile" exact to='/rwby'>RWBY PAPER</Link>
                 </div>
 

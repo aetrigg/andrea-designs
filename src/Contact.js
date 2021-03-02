@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useMediaQuery } from 'react-responsive';
 import Footer from './components/Footer.js';
 import { withAlert } from 'react-alert';
+import sendMail from './functions/sendMail';
 
 //desktop media query component
 const Desktop = ({ children }) => {
@@ -76,7 +77,7 @@ class Contact extends React.Component{
     handleSubmit = e => {
       const alert = this.props.alert;
 
-      fetch('/contact', {
+      fetch('/sendmail', {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact-form", ...this.state })
@@ -125,7 +126,7 @@ class Contact extends React.Component{
                     <p className="item-b">contact-form.php</p>
                   </div>
         
-                  <form id="contact-form-mobile" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form">
+                  <form id="contact-form-mobile" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form" ref="formTag">
 
                     <input type="hidden" name="form-name" value="contact-form-mobile" />
         
@@ -176,7 +177,7 @@ class Contact extends React.Component{
                       <p className="item-b">contact-form.php</p>
                     </div>
           
-                    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form">
+                    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" name="contact-form" ref="formTag">
 
                         <input type="hidden" name="form-name" value="contact-form" />
 
