@@ -9,13 +9,14 @@ exports.handler = function(event, context, callback) {
             password: process.env.THE_PASSWORD
         }
     });
-    console.log(event.body);
     
     var name = req.body.name
     var email = req.body.email
     var subject = req.body.subject
     var message = req.body.message
     var content = `New Message from Andrea Designs! From: ${name} at ${email} Message: ${message}`
+
+    console.log(content);
 
     transporter.sendMail({
         from: 'hello@designsbyandrea.me',
