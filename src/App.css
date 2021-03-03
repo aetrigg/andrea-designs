@@ -1536,11 +1536,11 @@ img.cartoon-me{
   align-items:center;
 }
 
-.introduction, .recent-projects{
+.introduction, .recent-projects, .instagram-feed{
   width:90%;
 }
 
-.introduction-container, .recent-projects-container{
+.introduction-container, .recent-projects-container, .instagram-feed-container{
   border:var(--border);
   box-shadow:var(--drop-shadow);
   margin-bottom:5vh;
@@ -1554,6 +1554,11 @@ img.cartoon-me{
 .recent-projects.header{
   width:100%;
   background-color:var(--electricity-purple);
+}
+
+.instagram-feed.header{
+  width:100%;
+  background-color:var(--electricity-yellow);
 }
 
 .photo-text{
@@ -1647,4 +1652,50 @@ img.cartoon-me{
   background-color:var(--true-black);
   color:var(--canvas-white);
   transition:0.5s ease;
+}
+
+.feed-container-images{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  margin:2vh 0px 7vh;
+}
+
+.feed-container-images a{
+  width:25%;
+  margin:1vh 1vw;
+}
+
+.feed-container-images a img{
+  width:100%;
+  border:var(--border);
+}
+
+.feed-container .button a{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.2vw;
+  color:var(--true-black);
+  text-decoration:none;
+  padding:7px 10px;
+  background-color:var(--electricity-yellow);
+  border:var(--border);
+}
+
+.feed-container .button a:hover{
+  background-color:var(--true-black);
+  color:var(--canvas-white);
+  transition:0.5s ease;
+}
+
+.feed-container{
+  margin-bottom:7vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
 }

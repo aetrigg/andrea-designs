@@ -9,6 +9,7 @@ import img2 from '../assets/academy-conference.png';
 import backButton from '../assets/left-arrow.svg';
 import forwardButton from '../assets/right-arrow.svg';
 import GAListener from 'react-ga';
+import Feed from 'react-instagram-authless-feed';
 import Footer from './Footer';
 
 //desktop media query component
@@ -184,7 +185,28 @@ class Home extends React.Component{
                           </div>
                         </div>
                       </div>
-  
+                    </div>
+                  </div>
+
+                  <div className="instagram-feed">
+                    <div className="instagram-feed-container">
+                      <div className="instagram-feed header">
+                        <div className="smileys item-a">
+                          <img src={smiley} className="smiley" alt="smiley" />
+                          <img src={smiley} className="smiley" alt="smiley" />
+                          <img src={smiley} className="smiley" alt="smiley" />
+                        </div>
+
+                        <p className="item-b">instagram-feed.jpeg</p>
+                      </div>
+
+                      <div className="feed-container">
+                        <Feed userName="andreacreatesthings" className="feed-container-images" limit="9" />
+
+                        <div className="button">
+                          <a href="https://instagram.com/designsby.andrea" target="_blank">View My Instagram</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -192,6 +214,7 @@ class Home extends React.Component{
             </div>
           </div>
         </Desktop>
+        <Footer/>
       </div>
     )
   }
