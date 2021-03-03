@@ -1121,7 +1121,7 @@ h4.h4-filter, h4.h4-tag{
 }
 
 .image-image{
-  width:100%;
+  width:101%;
 }
 
 p.description{
@@ -1515,4 +1515,136 @@ h4.h4-tag{
 
 .links.header{
   background-color:var(--electricity-purple);
+}
+
+img.cartoon-me{
+  height:12vw;
+}
+
+.container.home{
+  height:auto;
+}
+
+.header.home{
+  background-color:var(--electricity-yellow);
+}
+
+.center.column{
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.introduction, .recent-projects{
+  width:90%;
+}
+
+.introduction-container, .recent-projects-container{
+  border:var(--border);
+  box-shadow:var(--drop-shadow);
+  margin-bottom:5vh;
+}
+
+.introduction.header{
+  width:100%;
+  background-color:var(--electricity-pink);
+}
+
+.recent-projects.header{
+  width:100%;
+  background-color:var(--electricity-purple);
+}
+
+.photo-text{
+  display:flex;
+  margin:2vh 2vw;
+}
+
+.intro-text{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  margin-left:1.5vw;
+}
+
+.intro-text p{
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.2vw;
+}
+
+.back-button-img, .forward-button-img{
+  cursor:pointer;
+  padding:0px 2vh;
+}
+
+.back-button-img img, .forward-button-img img{
+  height:20vh;
+  width:3vh;
+}
+
+.data-info{
+  margin:2vh 0px 4vh;
+}
+
+.data-info h4{
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+  font-size:2vw;
+  margin-bottom:-2.5vh;
+  margin-top:0px;
+}
+
+.data-info p{
+  font-family:"Anonymous Pro", monospace;
+  font-weight:600;
+  font-size:1.2vw;
+  text-align:justify;
+}
+
+.data-img{
+  border:var(--true-black);
+  width:100%;
+  height:25vh;
+  border-bottom:var(--border-bottom);
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+}
+
+.data-img img{
+  width:101%;
+}
+
+.data-flex{
+  display:flex;
+  flex-direction:row;
+}
+
+.data-buttons{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.data-button{
+  background-color:var(--electricity-purple);
+  border:var(--border);
+  color:var(--true-black);
+  text-decoration:none;
+  font-family:"Anonymous Pro";
+  font-weight:600;
+  font-size:1.2vw;
+  padding:7px 10px;
+}
+
+.data-button:hover{
+  background-color:var(--true-black);
+  color:var(--canvas-white);
+  transition:0.5s ease;
 }

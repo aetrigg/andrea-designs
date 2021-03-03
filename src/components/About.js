@@ -34,8 +34,8 @@ function About(props) {
             </div>
 
             <div className="margins" >
-              <h1 className="mobile">WELL <span className="pink-letter">H</span><span className="purple-letter">E</span><span className="yellow-letter">L</span><span className="pink-letter">L</span><span className="purple-letter">O</span> THERE!</h1>
-              <h2 className="mobile">I'M SO HAPPY YOU STUMBLED UPON<br/>MY LITTLE CORNER OF THE INTERNET</h2>
+              <h1>NICE TO <span className="pink-letter">M</span><span className="purple-letter">E</span><span className="yellow-letter">E</span><span className="pink-letter">T</span> YOU!</h1>
+              <h2>NOW THAT YOU'RE HERE, ALLOW ME<br/>TO INTRODUCE MYSELF</h2>
             </div>
 
             <div className="something-mobile">
@@ -136,8 +136,8 @@ function About(props) {
             </div>
 
             <div className="margins">
-              <h1>WELL <span className="pink-letter">H</span><span className="purple-letter">E</span><span className="yellow-letter">L</span><span className="pink-letter">L</span><span className="purple-letter">O</span> THERE!</h1>
-              <h2>I'M SO HAPPY YOU STUMBLED UPON<br/>MY LITTLE CORNER OF THE INTERNET</h2>
+              <h1>NICE TO <span className="pink-letter">M</span><span className="purple-letter">E</span><span className="yellow-letter">E</span><span className="pink-letter">T</span> YOU!</h1>
+              <h2>NOW THAT YOU'RE HERE, ALLOW ME<br/>TO INTRODUCE MYSELF</h2>
             </div>
 
             {/* grid section starts below */}
