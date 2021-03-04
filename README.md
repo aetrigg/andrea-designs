@@ -4,5 +4,7 @@ Hello and thank you so much for viewing my repository for my personal website, [
 
 ## TODO
 [] Make website responsive for tablets, iPad Pro
+
 [] Create mobile component for portfolio projects
+
 [] Create shop (component?? separate repo??)
