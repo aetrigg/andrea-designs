@@ -99,7 +99,113 @@ class Home extends React.Component{
       <div className="responsive-container">
         <Mobile>
           <div className="body-mobile">
+            <div className="container-mobile home">
+              <div className="header mobile home">
+                <div className="smileys item-a">
+                  <img src={smiley} className="smiley" alt="smiley" />
+                  <img src={smiley} className="smiley" alt="smiley" />
+                  <img src={smiley} className="smiley" alt="smiley" />
+                </div>
+
+                <p className="item-b">homepage.html</p>
+              </div>
+
+              <div className="margins">
+                <h1 className="mobile">WELL <span className="pink-letter">H</span><span className="purple-letter">E</span><span className="yellow-letter">L</span><span className="pink-letter">L</span><span className="purple-letter">O</span> THERE!</h1>
+                <h2 className="mobile">I'M SO HAPPY YOU STUMBLED UPON<br/>MY LITTLE CORNER OF THE INTERNET</h2>
+
+                <div className="center column">
+                  <div className="introduction-mobile">
+                    <div className="introduction-mobile-container">
+                      <div className="introduction mobile header">
+                        <div className="smileys item-a">
+                          <img src={smiley} className="smiley" alt="smiley" />
+                          <img src={smiley} className="smiley" alt="smiley" />
+                          <img src={smiley} className="smiley" alt="smiley" />
+                        </div>
+
+                        <p className="item-b">introduction.js</p>
+                      </div>
+
+                      <div className="photo-text-mobile">
+                        <img src={me} alt="cartoon-me" className="cartoon-me-mobile" />
+
+                        <div className="intro-text-mobile">
+                          <p>My name is Andrea Trigg, and I am a designer / developer in all things web and graphics based in small town, Indiana. This is my personal website for my personal brand and small business, Andrea Designs. Please take a look around and enjoy!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="recent-projects-mobile">
+                        <div className="recent-projects-container-mobile">
+                          <div className="recent-projects mobile header">
+                            <div className="smileys item-a">
+                              <img src={smiley} className="smiley" alt="smiley" />
+                              <img src={smiley} className="smiley" alt="smiley" />
+                              <img src={smiley} className="smiley" alt="smiley" />
+                            </div>
+
+                            <p className="item-b">recent-projects.js</p>
+                          </div>
+
+                          <div className="data-container-mobile">
+                            <div className="data-img-mobile">
+                              <img src={this.state.imgList[this.state.index]} />
+                            </div>
+
+                            <div className="data-flex-mobile">
+                              <div className="back-button-mobile">
+                                <div className="back-button-img-mobile" onClick={this.onClickBack}>
+                                  <img src={backButton} />
+                                </div>
+                              </div>
+
+                              <div className="data-info-mobile">
+                                <h4>{this.state.titleList[this.state.index]}</h4>
+                                <p>{this.state.descList[this.state.index]}</p>
+
+                                <div className="data-buttons-mobile">
+                                  <GAListener.OutboundLink eventLabel="home-project-link-1" to={this.state.button1List[this.state.index]} target="_blank" className="data-button-mobile" style={{marginBottom:2 + "vh"}}>{this.state.button1NameList[this.state.index]}</GAListener.OutboundLink>
   
+                                  <GAListener.OutboundLink eventLabel="home-project-link-2" to={this.state.button2List[this.state.index]} target="_blank" className="data-button-mobile">{this.state.button2NameList[this.state.index]}</GAListener.OutboundLink>
+                                </div>
+                              </div>
+
+                              <div className="forward-button-mobile">
+                                <div className="forward-button-img-mobile" onClick={this.onClickForward}>
+                                  <img src={forwardButton} />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="instagram-feed-mobile">
+                        <div className="instagram-feed-container-mobile">
+                          <div className="instagram-feed mobile header">
+                            <div className="smileys item-a">
+                              <img src={smiley} className="smiley" alt="smiley" />
+                              <img src={smiley} className="smiley" alt="smiley" />
+                              <img src={smiley} className="smiley" alt="smiley" />
+                            </div>
+
+                            <p className="item-b">instagram-feed.jpeg</p>
+                          </div>
+
+                          <div className="feed-container-mobile">
+                            <Feed userName="andreacreatesthings" className="feed-container-images-mobile" limit="10" />
+
+                            <div className="button-mobile">
+                              <a href="https://instagram.com/designsby.andrea" target="_blank">View My Instagram</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Mobile>
   
