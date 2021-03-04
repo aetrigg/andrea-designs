@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import smiley from '../assets/black-smiley.svg';
+import GAListener from 'react-ga';
 
 const RadioButton = (props) => {
     return(
@@ -36,6 +37,11 @@ class Projects extends Component{
 
         //if user clicks web design, state will change and show only projects tagged web design
         if(this.state.name === "web-design"){
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Web Design radio button clicked'
+            })
+            
             projectItems = this.props.myArrays.map((data) => {
                 return(
                     <div key={data.id} >
@@ -61,9 +67,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} className="project-button" target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -89,6 +97,10 @@ class Projects extends Component{
         //if user clicks brand identity, state will change and show only projects tagged brand identity
         else if(this.state.name === "brand-identity"){
             //console.log("you clicked brand identity");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Brand Identity radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -115,9 +127,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -144,6 +158,10 @@ class Projects extends Component{
         //if user clicks graphic design, state will change and show only projects tagged graphic design
         else if(this.state.name === "graphic-design"){
             //console.log("you clicked graphic design");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Graphic Design radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -170,9 +188,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -198,6 +218,10 @@ class Projects extends Component{
         //if user clicks mobile app, state will change and show only projects tagged mobile app
         else if(this.state.name === "mobile-app"){
             //console.log("you clicked mobile app");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Mobile App radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -224,9 +248,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -253,6 +279,10 @@ class Projects extends Component{
         //if user clicks social media, state will change and show only projects tagged social media
         else if(this.state.name === "social-media"){
             //console.log("you clicked mobile app");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Social Media radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -279,9 +309,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -308,6 +340,10 @@ class Projects extends Component{
         //if user clicks front end, state will change and show only projects tagged front end
         else if(this.state.name === "front-end"){
             //console.log("you clicked mobile app");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Front End radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -334,9 +370,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -362,6 +400,10 @@ class Projects extends Component{
         //if user clicks back end, state will change and show only projects tagged back end
         else if(this.state.name === "back-end"){
             //console.log("you clicked back end");
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'Back End radio button clicked'
+            })
 
             projectItems = this.props.myArrays.map((data) => {
                 return(
@@ -388,9 +430,11 @@ class Projects extends Component{
 
                                         <div className="project-buttons">
                                             {data.buttons.map(button =>
-                                                <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                                    backgroundColor: `${filteredTag.buttonColor}`
-                                                }}>{button.buttonName}</a>
+                                                <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                                        backgroundColor: `${filteredTag.buttonColor}`
+                                                    }}>{button.buttonName}</a>
+                                                </GAListener.OutboundLink>
                                             )}
                                         </div>
 
@@ -415,6 +459,11 @@ class Projects extends Component{
         
         //show when user clicks all, and is default setting for page
         else{
+            GAListener.event({
+                category: 'Portfolio',
+                action: 'All radio button clicked'
+            })
+
             projectItems = this.props.myArrays.map((data) => {
                 return(
                     <div key={data.id} className="individual-project-container">
@@ -439,9 +488,11 @@ class Projects extends Component{
 
                             <div className="project-buttons">
                                 {data.buttons.map(button =>
-                                    <a href={button.buttonHref} target="_blank" className="project-button" style={{
-                                        backgroundColor: `${button.buttonColor}`
-                                    }}>{button.buttonName}</a>
+                                    <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
+                                        <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                            backgroundColor: `${button.buttonColor}`
+                                        }}>{button.buttonName}</a>
+                                    </GAListener.OutboundLink>
                                 )}
                             </div>
 

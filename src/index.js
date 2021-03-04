@@ -7,9 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Links from './components/Links';
-//import createHistory from 'history/createBrowserHistory';
-//import ReactGA from 'react-ga';
-//import {PropTypes} from 'prop-types'
 import GAListener from './components/GAListener';
 
 import Home from './components/Home';
@@ -27,41 +24,6 @@ import Rapunzel from './components/Rapunzel';
 import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
-
-/*class Analytics extends React.Component<RouteComponentProps<any>> {
-  componentDidMount() {
-    this.sendPageChange(this.props.location.pathname, this.props.location.search)
-  }
-
-  componentDidUpdate(prevProps: RouteComponentProps<any>) {
-    if (this.props.location.pathname !== prevProps.location.pathname
-      || this.props.location.search !== prevProps.location.search) {
-      this.sendPageChange(this.props.location.pathname, this.props.location.search)
-    }
-  }
-
-  sendPageChange(pathname: string, search: string = "") {
-    const page = pathname + search
-    ReactGA.set({page});
-    ReactGA.pageview(page);
-  }
-
-  render() {
-    return null
-  }
-}
-
-const AnalyticsTracker = () => {
-  return <Route component={Analytics} />
-}
-
-
-//how to track page views in Google Analytics
-const history = createHistory()
-history.listen((location, action) => {
-  ReactGA.set({ page: location.pathname });
-  ReactGA.pageview(location.pathname);
-});*/
 
 const options = {
   timeout: 3000,

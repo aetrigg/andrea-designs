@@ -49,7 +49,7 @@ function Shop(){
                                     </div>
                                         
                                     <div className="etsy-shop-container-mobile">
-                                        <p>My shop is currently under construction and will be coming soon! Until then, please shop for my handmade products by visiting <a href="https://designsbyandrea.etsy.com/" className="etsy-link">etsy.designsbyandrea.com</a>!</p>
+                                        <p>My shop is currently under construction and will be coming soon! Until then, please shop for my handmade products by visiting <a href="https://designsbymeandrea.etsy.com/" className="etsy-link">etsy.designsbyandrea.com</a>!</p>
                                     </div>
                                 </div>
                             </div>

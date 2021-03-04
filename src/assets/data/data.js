@@ -23,13 +23,15 @@ export const projectData = [
                 "buttonName":"View Demo",
                 "buttonHref":"https://mima.designsbyandrea.me/",
                 "buttonColor":"#FF99B0",
-                "buttonClass":"button-item-a"
+                "buttonClass":"button-item-a",
+                "eventLabel":"portfolio-mima-demo-button"
             },
             {
                 "buttonName":"View Github",
                 "buttonHref":"https://github.com/aetrigg/MIMA",
                 "buttonColor":"#FF99B0",
-                "buttonClass":"button-item-b"
+                "buttonClass":"button-item-b",
+                "eventLabel":"portfolio-mima-github-button"
             }
         ],
         "tags": [
@@ -61,12 +63,16 @@ export const projectData = [
             {
                 "buttonName": "View Website",
                 "buttonHref": "http://academyconference.designsbyandrea.me/",
-                "buttonColor":"#CD99EB"
+                "buttonColor":"#CD99EB",
+                "buttonClass":"button-item-a",
+                "eventLabel":"portfolio-academy-conference-website-button"
             },
             {
                 "buttonName": "View Github",
                 "buttonHref":"https://github.com/aetrigg/academyConference",
-                "buttonColor":"#CD99EB"
+                "buttonColor":"#CD99EB",
+                "buttonClass":"button-item-b",
+                "eventLabel":"portfolio-academy-conference-github-button"
             }
         ],
         "tags": [
@@ -106,12 +112,16 @@ export const projectData = [
             {
                 "buttonName":"View Website",
                 "buttonHref": "https://aetrigg.github.io/portfolioWebsite",
-                "buttonColor":"#CD99EB"
+                "buttonColor":"#CD99EB",
+                "buttonClass":"button-item-a",
+                "eventLabel":"portfolio-old-portfolio-website-button"
             },
             {
                 "buttonName": "View Github",
                 "buttonHref": "https://github.com/aetrigg/portfolioWebsite",
-                "buttonColor":"#CD99EB"
+                "buttonColor":"#CD99EB",
+                "buttonClass":"button-item-b",
+                "eventLabel":"portfolio-old-portfolio-github-button"
             }
         ],
         "tags": [
@@ -143,13 +153,17 @@ export const projectData = [
         "buttons": [
             {
                 "buttonName":"View Project Details",
-                "buttonHref": "https://behance.net/designsbyandrea",
-                "buttonColor":"#FFCB46"
+                "buttonHref": "https://www.behance.net/gallery/111174197/andrea-designs-personal-branding",
+                "buttonColor":"#FFCB46",
+                "buttonClass":"button-item-a",
+                "eventLabel":"portfolio-andrea-designs-details-button"
             },
             {
                 "buttonName": "View Github",
                 "buttonHref": "https://github.com/aetrigg/andrea-designs",
-                "buttonColor":"#FFCB46"
+                "buttonColor":"#FFCB46",
+                "buttonClass":"button-item-b",
+                "eventLabel":"portfolio-andrea-designs-github-button"
             }
         ],
         "tags": [
@@ -205,7 +219,8 @@ export const projectData = [
             {
                 "buttonName": "Download PDF",
                 "buttonHref": `${TaylorSwiftPDF}`,
-                "buttonColor":"#FFCB46"
+                "buttonColor":"#FFCB46",
+                "eventLabel":"taylor-swift-pdf-button"
             }
         ],
         "tags": [
@@ -229,7 +244,8 @@ export const projectData = [
             {
                 "buttonName": "Download PDF",
                 "buttonHref": `${soicPDF}`,
-                "buttonColor":"#FFCB46"
+                "buttonColor":"#FFCB46",
+                "eventLabel":"soic-pdf-button"
             }
         ],
         "tags": [
@@ -253,12 +269,16 @@ export const projectData = [
             {
                 "buttonName": "View Full Size Image",
                 "buttonHref": "/full-size-image-m",
-                "buttonColor":"#FF99B0"
+                "buttonColor":"#FF99B0",
+                "buttonClass":"button-item-a",
+                "eventLabel":"meredith-foster-full-image-button"
             },
             {
                 "buttonName": "View Time Lapse GIF",
                 "buttonHref": "/timelapse",
-                "buttonColor":"#FF99B0"
+                "buttonColor":"#FF99B0",
+                "buttonClass":"button-item-b",
+                "eventLabel":"meredith-foster-timelapse-button"
             }
         ],
         "tags": [
@@ -282,7 +302,8 @@ export const projectData = [
             {
                 "buttonName": "View Full Size Image",
                 "buttonHref": "/full-size-image-d",
-                "buttonColor":"#FF99B0"
+                "buttonColor":"#FF99B0",
+                "eventLabel":"principles-of-design-full-image-button"
             }
         ],
         "tags": [
@@ -306,7 +327,8 @@ export const projectData = [
             {
                 "buttonName": "View Full Size Image",
                 "buttonHref": "/full-size-image-p",
-                "buttonColor":"#FF99B0"
+                "buttonColor":"#FF99B0",
+                "eventLabel":"pots-full-image-button"
             }
         ],
         "tags": [
@@ -338,7 +360,8 @@ export const projectData = [
             {
                 "buttonName": "View Full Size Images",
                 "buttonHref": "/full-size-image-e",
-                "buttonColor":"#FF99B0"
+                "buttonColor":"#FF99B0",
+                "eventLabel":"portfolio-countdown-full-image-button"
             }
         ],
         "tags": [

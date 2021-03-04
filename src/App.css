@@ -118,6 +118,10 @@ h3{
   padding-top:12vh !important;
 }
 
+.eaaYCF{
+  margin-right:2%;
+}
+
 .logo{
   height:12vh;
   z-index:2;
@@ -130,7 +134,8 @@ h3{
   position:fixed;
   height:10vh;
   filter:drop-shadow(9px 9px 0px rgba(0,0,0,1));
-  margin:2.5vh;
+  margin-left:2%;
+  margin-top:-4.5%;
 }
 
 .navigation-desktop{
@@ -284,9 +289,13 @@ h3{
 .footer-mobile-sm{
   display:flex;
   flex-direction:row;
-  width:100%;
+  width:80%;
   flex-wrap:wrap;
   justify-content:space-evenly;
+}
+
+.footer-mobile-sm a{
+  margin:0px 2%;
 }
 
 .footer-mobile-sm .fab{

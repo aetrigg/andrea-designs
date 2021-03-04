@@ -40,7 +40,7 @@ class Home extends React.Component{
     const project1description = "In the spring of 2020, I had the pleasure of working in a group of 4 to create the Mental Imagery Mobile Application for the IU School of Medicine. My role in this project was to develop the front-end using Angular.";
     const project2description = "A simple homework assignment that pulls data from both a JSON file and from a PHP database. The concept behind the assignment was to create a conference website, and I created mine based after my sorority, Alpha Sigma Alpha, and their annual conference, The Academy.";
 
-    const project0link1 = "https://behance.net/designsbyandrea/"; //add behance link once uploaded
+    const project0link1 = "https://www.behance.net/gallery/111174197/andrea-designs-personal-branding";
     const project0link1Name = "View Project Details";
 
     const project0link2 = "https://github.com/aetrigg/andrea-designs";
