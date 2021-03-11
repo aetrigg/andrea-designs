@@ -108,8 +108,8 @@ function About(props) {
                   <p className="profile-tidbit-mobile">FAVE. SEASON . . . . AUTUMN</p>
                   <p className="profile-tidbit-mobile">FAVE. T.V. SHOW . . . . . .<br/>. . . . . . . BOB'S BURGERS</p>
                   <p className="profile-tidbit-mobile">FAVE. SONG . . . <a href="https://www.youtube.com/watch?v=9Gb0a8Ie2hM" className="profile-link">CLICK HERE</a></p>
-                  <p className="profile-tidbit-mobile">FAVE. VINE . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link">CLICK HERE</a></p>
-                  <p className="profile-tidbit-mobile">FAVE. WORD . . . . . .YEET</p>
+                  <p className="profile-tidbit-mobile">FAVE. VINE . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link" target="_blank">CLICK HERE</a></p>
+                  <p className="profile-tidbit-mobile" target="_blank">FAVE. WORD . . . . . .YEET</p>
                 </div>
               </div>
             </div>
@@ -192,8 +192,8 @@ function About(props) {
                   <p className="profile-tidbit">PATRONUS CHARM . . . . . .RED PANDA</p>
                   <p className="profile-tidbit">FAVE. SEASON . . . . . . . . AUTUMN</p>
                   <p className="profile-tidbit">FAVE. T.V. SHOW . . . BOB'S BURGERS</p>
-                  <p className="profile-tidbit">FAVE. SONG . . . . . . . <a href="https://www.youtube.com/watch?v=9Gb0a8Ie2hM" className="profile-link">CLICK HERE</a></p>
-                  <p className="profile-tidbit">FAVE. VINE . . . . . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link">CLICK HERE</a></p>
+                  <p className="profile-tidbit">FAVE. SONG . . . . . . . <a href="https://www.youtube.com/watch?v=9Gb0a8Ie2hM" className="profile-link" target="_blank">CLICK HERE</a></p>
+                  <p className="profile-tidbit">FAVE. VINE . . . . . . . <a href="https://www.youtube.com/watch?v=fFLiP9VS6Is" className="profile-link" target="_blank">CLICK HERE</a></p>
                   <p className="profile-tidbit">FAVE. WORD . . . . . . . . . . YEET</p>
                 </div>
                 </div>

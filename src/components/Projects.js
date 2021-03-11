@@ -488,8 +488,8 @@ class Projects extends Component{
 
                             <div className="project-buttons">
                                 {data.buttons.map(button =>
-                                    <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank">
-                                        <a href={button.buttonHref} target="_blank" className="project-button" style={{
+                                    <GAListener.OutboundLink eventLabel={button.eventLabel} to={button.buttonHref} target="_blank" className="project-button-ga">
+                                        <a href={button.buttonHref} className="project-button" style={{
                                             backgroundColor: `${button.buttonColor}`
                                         }}>{button.buttonName}</a>
                                     </GAListener.OutboundLink>

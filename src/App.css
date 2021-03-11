@@ -1150,6 +1150,10 @@ p.description{
   margin-right:20px;
 }
 
+a.project-button-ga{
+  text-decoration:none;
+}
+
 .project-button:hover{
   cursor:pointer;
   background-color:var(--true-black) !important;
@@ -1254,7 +1258,8 @@ h4.h4-tag{
   z-index:1;
   margin-left:1vw;
   margin-right:-10vw;
-  margin-bottom:1vw;
+  margin-bottom:2vw;
+  margin-top:1vw;
   clear:left;
 }
 
@@ -1676,7 +1681,7 @@ img.cartoon-me-mobile{
 }
 
 .data-img img, .data-img-mobile img{
-  height:101%;
+  width:101%;
 }
 
 .data-flex{
