@@ -9,7 +9,7 @@ import img2 from '../assets/academy-conference.png';
 import backButton from '../assets/left-arrow.svg';
 import forwardButton from '../assets/right-arrow.svg';
 import GAListener from 'react-ga';
-import Feed from 'react-instagram-authless-feed';
+//import Feed from 'react-instagram-authless-feed';
 import Footer from './Footer';
 
 //desktop media query component
