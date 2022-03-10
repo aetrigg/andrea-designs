@@ -4,8 +4,12 @@ import { useMediaQuery } from 'react-responsive';
 import smiley from '../assets/black-smiley.svg';
 import me from '../assets/cartoon-me.png';
 import img0 from '../assets/andrea-designs.png';
-import img1 from '../assets/mima.png';
-import img2 from '../assets/academy-conference.png';
+import img1 from '../assets/blizzard-gear.png';
+import img2 from '../assets/call-of-duty-league.png';
+import img3 from '../assets/le-verden.png';
+import img4 from '../assets/kid-art-lit.png';
+//import img1 from '../assets/mima.png';
+//import img2 from '../assets/academy-conference.png';
 import backButton from '../assets/left-arrow.svg';
 import forwardButton from '../assets/right-arrow.svg';
 import GAListener from 'react-ga';
@@ -33,12 +37,18 @@ class Home extends React.Component{
     this.onClickBack = this.onClickBack.bind(this);
 
     const project0title = "ANDREA DESIGNS";
-    const project1title = "MIMA";
-    const project2title = "ACADEMY CONFERENCE";
+    const project1title = "BLIZZARD GEAR";
+    const project2title = "CALL OF DUTY LEAGUE";
+    const project3title = "LE VERDEN";
+    const project4title = "KID ART LIT";
 
     const project0description = "My biggest obsession, Andrea Designs is my personal brand and is what you’re looking at right now! I put a lot of time and effort behind my personal brand and I want to share all the little, unique details that makes this brand ME!";
-    const project1description = "In the spring of 2020, I had the pleasure of working in a group of 4 to create the Mental Imagery Mobile Application for the IU School of Medicine. My role in this project was to develop the front-end using Angular.";
-    const project2description = "A simple homework assignment that pulls data from both a JSON file and from a PHP database. The concept behind the assignment was to create a conference website, and I created mine based after my sorority, Alpha Sigma Alpha, and their annual conference, The Academy.";
+    const project1description = "In late 2021 and early 2022, I worked alongside a small team of developers to bring the Blizzard Gear e-commerce store to life utilizing Shopify! My role was to ensure the website was a pixel-perfect match to the high-fidelity prototype provided to us from the design team. I also added and changed various parts prior to launching to ensure the website was ADA-compliant.";
+    const project2description = "As well as working on the Blizzard Gear Store, I also had the pleasure of developing the Call of Duty League e-commerce store, which was also created in Shopify. My role was to add various styling changes throughout the website--notably the homepage, product description page, and checkout--as well as ensure the website was ADA-compliant before and after launching.";
+    const project3description = "In the summer of 2021, I got to participate in the creation of leVerden's official website, built using Shopify. I was particularly excited for this project as it was my first working in Shopify 2.0, and I loved being challenged by the complex design!";
+    const project4description = "In late 2020 to early 2021, I was tasked by my internship to completely revamp KidArtLit, a cute subscription box for children that encourages reading and creativity. Working closely with the COO, we designed the whole website utilizing Figma, and then I developed a custom Shopify theme that reflects the design with pixel-perfect precision.";
+    //const project1description = "In the spring of 2020, I had the pleasure of working in a group of 4 to create the Mental Imagery Mobile Application for the IU School of Medicine. My role in this project was to develop the front-end using Angular.";
+    //const project2description = "A simple homework assignment that pulls data from both a JSON file and from a PHP database. The concept behind the assignment was to create a conference website, and I created mine based after my sorority, Alpha Sigma Alpha, and their annual conference, The Academy.";
 
     const project0link1 = "https://www.behance.net/gallery/111174197/andrea-designs-personal-branding";
     const project0link1Name = "View Project Details";
@@ -46,7 +56,31 @@ class Home extends React.Component{
     const project0link2 = "https://github.com/aetrigg/andrea-designs";
     const project0link2Name = "View Github";
 
-    const project1link1 = "https://mima.designsbyandrea.me";
+    const project1link1 = "https://gear.blizzard.com/";
+    const project1link1Name = "View Live Site";
+
+    const project1link2 = "/";
+    const project1link2Name = "View Github";
+
+    const project2link1 = "https://shop.callofdutyleague.com/";
+    const project2link1Name = "View Live Site";
+
+    const project2link2 = "/";
+    const project2link2Name = "View Github";
+
+    const project3link1 = "https://leverden.co/";
+    const project3link1Name = "View Live Site";
+
+    const project3link2 = "https://github.com/aetrigg/le-verden-shopify-theme";
+    const project3link2Name = "View Github";
+
+    const project4link1 = "https://www.kidartlit.com/";
+    const project4link1Name = "View Live Site";
+
+    const project4link2 = "https://github.com/aetrigg/kidartlit-shopify-theme";
+    const project4link2Name = "View Github";
+
+    /*const project1link1 = "https://mima.designsbyandrea.me";
     const project1link1Name = "View Demo";
 
     const project1link2 = "https://github.com/aetrigg/MIMA";
@@ -56,17 +90,17 @@ class Home extends React.Component{
     const project2link1Name = "View Website";
 
     const project2link2 = "https://github.com/aetrigg/academyConference";
-    const project2link2Name = "View Github";
+    const project2link2Name = "View Github";*/
 
     this.state = {
       index: 0,
-      imgList: [img0, img1, img2],
-      titleList: [project0title, project1title, project2title],
-      descList: [project0description, project1description, project2description],
-      button1List: [project0link1, project1link1, project2link1],
-      button2List: [project0link2, project1link2, project2link2],
-      button1NameList: [project0link1Name, project1link1Name, project2link1Name],
-      button2NameList: [project0link2Name, project1link2Name, project2link2Name]
+      imgList: [img0, img1, img2, img3, img4],
+      titleList: [project0title, project1title, project2title, project3title, project4title],
+      descList: [project0description, project1description, project2description, project3description, project4description],
+      button1List: [project0link1, project1link1, project2link1, project3link1, project4link1],
+      button2List: [project0link2, project1link2, project2link2, project3link2, project4link2],
+      button1NameList: [project0link1Name, project1link1Name, project2link1Name, project3link1Name, project4link1Name],
+      button2NameList: [project0link2Name, project1link2Name, project2link2Name, project3link2Name, project4link2Name]
     }
   }
 
