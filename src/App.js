@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Link, NavLink, Router } from 'react-router-dom';
-import { ReactHamburger } from 'react-hamburger';
+//import { ReactHamburger } from 'react-hamburger';
 import primaryLogo from './assets/primaryLogo-01.svg';
 import { useMediaQuery } from 'react-responsive';
 /*import Home from './components/Home';
@@ -76,7 +76,7 @@ function App() {
     <div className="PersonalApp">
 
       <Mobile>
-        <ReactHamburger 
+        {/*<ReactHamburger 
           barColor={"#000"} 
           barRadius={0} 
           inline={true}
@@ -91,7 +91,7 @@ function App() {
           topBarGutter={-100}
           className={"border-bottom"}
           TopContent={<img src={primaryLogo} className="logo-mobile"></img>}
-        >
+        >*/}
           <Navigation className="navigation">
             <NavigationLink activeClassName="active" className="navigation-link" name={"home"} value={"HOME"} />
             <NavigationLink activeClassName="active" className="navigation-link" name={"about"} value={"ABOUT"} />
@@ -99,7 +99,7 @@ function App() {
             <NavigationLink className="navigation-link" name={"shop"} value={"SHOP"} />
             <NavigationLink activeClassName="active" className="navigation-link" name={"contact"} value={"CONTACT"} />
           </Navigation>
-        </ReactHamburger>
+        {/*</ReactHamburger>*/}
       </Mobile>
 
       <Desktop>

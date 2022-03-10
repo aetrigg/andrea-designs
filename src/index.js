@@ -8,8 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Links from './components/Links';
 import GAListener from './components/GAListener';
-import Firebase from './firebase/firebase';
-import FirebaseContext from './firebase/context.js';
+/*import Firebase from './firebase/firebase';
+import FirebaseContext from './firebase/context.js';*/
 
 import Home from './components/Home';
 import About from './components/About';
@@ -63,7 +63,6 @@ const AlertTemplate = ({ options, message, close }) => (
 
 ReactDOM.render(
   <React.StrictMode>
-    <FirebaseContext.Provider value={new Firebase()}>
       <Router>
         <GAListener trackingId="UA-188628664-1">
           <ScrollToTop>
@@ -93,7 +92,6 @@ ReactDOM.render(
           </AlertProvider>
         </GAListener>
       </Router>
-    </FirebaseContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

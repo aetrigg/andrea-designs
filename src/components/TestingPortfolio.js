@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Firebase from 'firebase';
+/*import Firebase from 'firebase';*/
 
 class ComponentToPrint extends Component{
     constructor(props){
@@ -12,7 +12,7 @@ class ComponentToPrint extends Component{
     };
 
     componentDidMount(){
-        const projectRef = Firebase.database().ref('projectData');
+        /*const projectRef = Firebase.database().ref('projectData');
         projectRef.on('value', (snapshot) => {
             let projects = snapshot.val();
             let newState = [];
@@ -29,7 +29,7 @@ class ComponentToPrint extends Component{
             this.setState({
                 projectData: newState
             });
-        });
+        });*/
     };
 
     render(){
