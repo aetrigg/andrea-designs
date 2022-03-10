@@ -2,7 +2,7 @@ import React from "react";
 import '../App.css';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
-import ResumePDF from '../assets/resume.pdf';
+import ResumePDF from '../assets/trigg-resume.pdf';
 
 //desktop media query component
 const Desktop = ({ children }) => {

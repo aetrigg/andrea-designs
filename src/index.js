@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Links from './components/Links';
 import GAListener from './components/GAListener';
+import Firebase from './firebase/firebase';
+import FirebaseContext from './firebase/context.js';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -24,6 +26,7 @@ import Rapunzel from './components/Rapunzel';
 import POTS from './components/POTS';
 import POD from './components/POD';
 import EtsyCountdown from './components/EtsyCountdown';
+import ComponentToPrint from './components/TestingPortfolio';
 
 const options = {
   timeout: 3000,
@@ -60,34 +63,37 @@ const AlertTemplate = ({ options, message, close }) => (
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <GAListener trackingId="UA-188628664-1">
-        <ScrollToTop>
-            <App />
-        </ScrollToTop>
-        <Route exact path="/links" component={Links} />
-  
-        <AlertProvider template={AlertTemplate} {...options}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/shop" component={Shop} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-          <Route exact path="/tos" component={TOS} />
-          <Route exact path="/rwby" component={RWBY} />
-          <Route exact path="/full-size-image-m" component={Meredith} />
-          <Route exact path="/timelapse" component={MeredithTimeLapse} />
-          <Route exact path="/full-size-image-r" component={Rapunzel} />
-          <Route exact path="/full-size-image-p" component={POTS} />
-          <Route exact path="/full-size-image-d" component={POD} />
-          <Route exact path="/full-size-image-e" component={EtsyCountdown} />
-        </Switch>
-        </AlertProvider>
-      </GAListener>
-    </Router>
+    <FirebaseContext.Provider value={new Firebase()}>
+      <Router>
+        <GAListener trackingId="UA-188628664-1">
+          <ScrollToTop>
+              <App />
+          </ScrollToTop>
+          <Route exact path="/links" component={Links} />
+    
+          <AlertProvider template={AlertTemplate} {...options}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/shop" component={Shop} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+            <Route exact path="/tos" component={TOS} />
+            <Route exact path="/rwby" component={RWBY} />
+            <Route exact path="/full-size-image-m" component={Meredith} />
+            <Route exact path="/timelapse" component={MeredithTimeLapse} />
+            <Route exact path="/full-size-image-r" component={Rapunzel} />
+            <Route exact path="/full-size-image-p" component={POTS} />
+            <Route exact path="/full-size-image-d" component={POD} />
+            <Route exact path="/full-size-image-e" component={EtsyCountdown} />
+            <Route path="/test-portfolio" component={ComponentToPrint} />
+          </Switch>
+          </AlertProvider>
+        </GAListener>
+      </Router>
+    </FirebaseContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
