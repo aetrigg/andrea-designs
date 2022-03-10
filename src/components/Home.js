@@ -294,7 +294,7 @@ class Home extends React.Component{
                     </div>
                   </div>
 
-                  <div className="instagram-feed">
+                  {/*<div className="instagram-feed">
                     <div className="instagram-feed-container">
                       <div className="instagram-feed header">
                         <div className="smileys item-a">
@@ -314,7 +314,7 @@ class Home extends React.Component{
                         </div>
                       </div>
                     </div>
-                  </div>
+                    </div>*/}
                 </div>
               </div>
             </div>
