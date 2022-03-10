@@ -182,7 +182,7 @@ class Home extends React.Component{
                         </div>
                       </div>
 
-                      <div className="instagram-feed-mobile">
+                      {/*<div className="instagram-feed-mobile">
                         <div className="instagram-feed-container-mobile">
                           <div className="instagram-feed mobile header">
                             <div className="smileys item-a">
@@ -202,7 +202,7 @@ class Home extends React.Component{
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div>*/}
                 </div>
               </div>
             </div>
