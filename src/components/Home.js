@@ -165,7 +165,7 @@ class Home extends React.Component{
                         <img src={me} alt="cartoon-me" className="cartoon-me-mobile" />
 
                         <div className="intro-text-mobile">
-                          <p>My name is Andrea Trigg, and I am a designer / developer in all things web and graphics based in small town, Indiana. This is my personal website for my personal brand and small business, Andrea Designs. Please take a look around and enjoy!</p>
+                          <p>My name is Andrea <s>Trigg</s> Powell, and I am a designer / developer in all things web and graphics based in small town, Indiana. This is my personal website for my personal brand, Andrea Designs. Please take a look around and enjoy!</p>
                         </div>
                       </div>
                     </div>
