@@ -35,10 +35,10 @@ function Footer(props) {
                         <ReactGA.OutboundLink eventLabel="footer-github" to="https://github.com/aetrigg" target="_blank"><a target="_blank" href="https://github.com/aetrigg/"><i className="fab fa-github fa-2x"></i></a></ReactGA.OutboundLink>
                         <ReactGA.OutboundLink eventLabel="footer-behance" to="https://behance.net/designsbyandrea/" target="_blank"><a target="_blank" href="https://behance.net/designsbyandrea/"><i className="fab fa-behance fa-2x"></i></a></ReactGA.OutboundLink>
                         <ReactGA.OutboundLink eventLabel="footer-linkedin" to="https://linkedin.com/in/designsbyandrea" target="_blank"><a target="_blank" href="https://linkedin.com/in/designsbyandrea/"><i className="fab fa-linkedin-in fa-2x"></i></a></ReactGA.OutboundLink>
-                        <ReactGA.OutboundLink eventLabel="footer-pinterest" to="https://pinterest.com/designsbyandrea/" target="_blank"><a target="_blank" href="https://pinterest.com/designsbyandrea/"><i className="fab fa-pinterest fa-2x"></i></a></ReactGA.OutboundLink>
-                        <ReactGA.OutboundLink eventLabel="footer-facebook" to="https://facebook.com/designsbyandrea/" target="_blank"><a target="_blank" href="https://facebook.com/designsbyandrea/"><i className="fab fa-facebook-f fa-2x"></i></a></ReactGA.OutboundLink>
-                        <ReactGA.OutboundLink eventLabel="footer-instagram" to="https://instagram.com/designsby.andrea/" target="_blank"><a target="_blank" href="https://instagram.com/designsby.andrea/"><i className="fab fa-instagram fa-2x"></i></a></ReactGA.OutboundLink>
-                        <ReactGA.OutboundLink eventLabel="footer-tiktok" to="https://tiktok.com/designsbyandrea" target="_blank"><a target="_blank" href="https://tiktok.com/designsbyandrea"><i className="fab fa-tiktok fa-2x"></i></a></ReactGA.OutboundLink>
+    {/*<ReactGA.OutboundLink eventLabel="footer-pinterest" to="https://pinterest.com/designsbyandrea/" target="_blank"><a target="_blank" href="https://pinterest.com/designsbyandrea/"><i className="fab fa-pinterest fa-2x"></i></a></ReactGA.OutboundLink>*/}
+    {/*<ReactGA.OutboundLink eventLabel="footer-facebook" to="https://facebook.com/designsbyandrea/" target="_blank"><a target="_blank" href="https://facebook.com/designsbyandrea/"><i className="fab fa-facebook-f fa-2x"></i></a></ReactGA.OutboundLink>*/}
+                        <ReactGA.OutboundLink eventLabel="footer-instagram" to="https://instagram.com/designsby.andrea/" target="_blank"><a target="_blank" href="https://instagram.com/andreacreatesthings/"><i className="fab fa-instagram fa-2x"></i></a></ReactGA.OutboundLink>
+    {/*<ReactGA.OutboundLink eventLabel="footer-tiktok" to="https://tiktok.com/designsbyandrea" target="_blank"><a target="_blank" href="https://tiktok.com/designsbyandrea"><i className="fab fa-tiktok fa-2x"></i></a></ReactGA.OutboundLink>*/}
                 </div>
             </div>
             
