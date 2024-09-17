@@ -79,11 +79,11 @@ function About(props) {
 
               <p>In the spring of 2020, I graduated from Indiana University-Purdue University Indianapolis with a Bachelor’s of Science degree in Media Arts and Science and a concentration in web design and development. Whew, that’s a mouthful! During my time at IUPUI, I gained not only web, but graphic desgin experience as well. While I dabbled in Illustrator in high school, I swore that I would never use it going forward in my career. Now, it is a staple tool that I use daily for my projects.</p>
 
-              <p>When you can’t find me in my office, you can generally find me laying on the couch watching television shows with my kitty, Daphne (a.k.a. Nee-Nee), or I’m journaling in my Hobonichi Techo, or most likely, I'm napping with my wonderful son, Theodore (a.k.a. Theo).</p>
+              <p>When you can’t find me in my office, you can generally find me laying on the couch watching television shows with my kitty, Daphne (a.k.a. Nee-Nee), I’m journaling in my Hobonichi Techo, or most likely, I’m sleeping in bed with my wonderful son, Theodore (a.k.a. Theo).</p>
 
-              <p>In May of 2020, I married my soulmate, Taran, in a small, intimate ceremony during the height of COVID. Due to this, my last name is now <strong>Powell</strong>! You may see some older projects I've worked on that have my maiden name, Trigg.</p>
-              /*<p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>*/
-              <p>I am currently working at <a href="https://intouchvet.com/" target="_blank" rel="noopener noreferrer">InTouchVet</a> as a graphic designer, however I am always open to new opportunities! If you want to work together, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
+              <p>In May of 2020, I married my soulmate, Taran, in a small and intimate ceremony during the height of COVID. Due to this, my last name is now Powell and you may see my maiden name, Trigg, on older projects.</p>
+                      
+              <p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
             </div>
 
             <div className="something-mobile">
@@ -99,7 +99,7 @@ function About(props) {
                 </div>
   
                 <div className="profile-information-mobile">
-                  <p className="profile-tidbit-mobile">NAME . . . . . ANDREA POWELL</p>
+                  <p className="profile-tidbit-mobile">NAME . . . . . ANDREA TRIGG</p>
                   <p className="profile-tidbit-mobile">ALIASES . . .AETRIGG/PANDEE</p>
                   <p className="profile-tidbit-mobile">BIRTHDAY . .  NOVEMBER 10TH</p>
                   <p className="profile-tidbit-mobile">PERSONALITY TYPE . . INFP-T</p>
@@ -207,9 +207,9 @@ function About(props) {
 
                 <p>In the spring of 2020, I graduated from Indiana University-Purdue University Indianapolis with a Bachelor’s of Science degree in Media Arts and Science and a concentration in web design and development. Whew, that’s a mouthful! During my time at IUPUI, I gained not only web, but graphic desgin experience as well. While I dabbled in Illustrator in high school, I swore that I would never use it going forward in my career. Now, it is a staple tool that I use daily for my projects.</p>
 
-                <p>When you can’t find me in my office, you can generally find me laying on the couch watching television shows with my kitty, Daphne (a.k.a. Nee-Nee), or I’m journaling in my Hobonichi Techo, or most likely, I'm napping with my wonderful son, Theodore (a.k.a. Theo).</p>
+                <p>When you can’t find me in my office, you can generally find me laying on the couch watching television shows with my kitty, Daphne (a.k.a. Nee-Nee), or I’m journaling in my Hobonichi Techo, or most likely, I’m sleeping in bed with my wonderful son, Theodore (a.k.a. Theo).</p>
 
-                <p>In May of 2020, I married my soulmate, Taran, in a small, intimate ceremony during the height of COVID. Due to this, my last name is now <strong>Powell</strong>! You may see some older projects I've worked on that have my maiden name, Trigg.</p></p>
+                <p>In May of 2020, I married my soulmate, Taran, in a small and intimate ceremony during the height of COVID. Due to this, my last name is now Powell and you may see my maiden name, Trigg, on older projects.</p>
 
                 <p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
               </div>
