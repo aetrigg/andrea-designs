@@ -382,7 +382,7 @@ h3{
   width:80vw;
   height:4vh;
   border-bottom:var(--border-bottom);
-  grid-template-columns: 20vw auto;
+  grid-template-columns: 8vw auto;
   grid-template-rows: 4vh;
   grid-template-areas: "smileys headerText";
   justify-items:center;
