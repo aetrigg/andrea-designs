@@ -43,7 +43,7 @@ function Footer(props) {
             </div>
             
 
-            <p className="copyright">Copyright 2021 Andrea Designs - All Rights Reserved</p>
+            <p className="copyright">Copyright 2024 Andrea Designs - All Rights Reserved</p>
         </div>
       </Desktop>
 
