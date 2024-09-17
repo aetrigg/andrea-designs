@@ -1388,7 +1388,7 @@ h4.h4-tag{
 .me-container-mobile{
   border:var(--border);
   box-shadow:var(--drop-shadow);
-  height:40vh;
+  height:67vh;
   width:67vw;
   background-image:url('./assets/me.jpg');
   background-repeat:no-repeat;
@@ -1402,7 +1402,7 @@ h4.h4-tag{
 .sunset-container-mobile{
   border:var(--border);
   box-shadow: var(--drop-shadow);
-  height:30vh;
+  height:50vh;
   width:67vw;
   background-image:url('./assets/sunset-waltz.jpg');
   background-repeat:no-repeat;
