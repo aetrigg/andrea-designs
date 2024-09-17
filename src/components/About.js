@@ -82,8 +82,7 @@ function About(props) {
               <p>When you can’t find me in my office, you can generally find me laying on the couch watching television shows with my kitty, Daphne (a.k.a. Nee-Nee), I’m journaling in my Hobonichi Techo, or most likely, I’m sleeping in bed with my wonderful son, Theodore (a.k.a. Theo).</p>
 
               <p>In May of 2020, I married my soulmate, Taran, in a small and intimate ceremony during the height of COVID. Due to this, my last name is now Powell and you may see my maiden name, Trigg, on older projects.</p>
-                      
-              /*<p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>*/
+            
               <p>I am currently working at InTouchVet as a graphic designer, however I am always open for further opportunities! If you would like to work with me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
             </div>
 
@@ -212,7 +211,6 @@ function About(props) {
 
                 <p>In May of 2020, I married my soulmate, Taran, in a small and intimate ceremony during the height of COVID. Due to this, my last name is now Powell and you may see my maiden name, Trigg, on older projects.</p>
 
-                /*<p>I am currently seeking opportunities to increase my skills in brand identity design and packaging design, as well as a full-time remote position with a creative agency designing websites. If you have these opportunities for me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>*/
                 <p>I am currently working at InTouchVet as a graphic designer, however I am always open for further opportunities! If you would like to work with me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
               </div>
 
