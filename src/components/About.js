@@ -99,7 +99,7 @@ function About(props) {
                 </div>
   
                 <div className="profile-information-mobile">
-                  <p className="profile-tidbit-mobile">NAME . . . . . ANDREA TRIGG</p>
+                  <p className="profile-tidbit-mobile">NAME . . . . . ANDREA POWELL</p>
                   <p className="profile-tidbit-mobile">ALIASES . . .AETRIGG/PANDEE</p>
                   <p className="profile-tidbit-mobile">BIRTHDAY . .  NOVEMBER 10TH</p>
                   <p className="profile-tidbit-mobile">PERSONALITY TYPE . . INFP-T</p>
@@ -184,7 +184,7 @@ function About(props) {
                 </div>
 
                 <div className="profile-information">
-                  <p className="profile-tidbit">NAME . . . . . . . . . ANDREA TRIGG</p>
+                  <p className="profile-tidbit">NAME . . . . . . . . . ANDREA POWELL</p>
                   <p className="profile-tidbit">ALIASES . . . . . . .AETRIGG/PANDEE</p>
                   <p className="profile-tidbit">BIRTHDAY . . . . . . .NOVEMBER 10TH</p>
                   <p className="profile-tidbit">PERSONALITY TYPE . . . . . . INFP-T</p>
