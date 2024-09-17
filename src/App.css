@@ -1365,7 +1365,7 @@ h4.h4-tag{
 }
 
 .header.mobile{
-  grid-template-columns: 15vw auto;
+  grid-template-columns: 8vw auto;
 }
 
 .header.mobile .item-a{
