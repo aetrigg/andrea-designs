@@ -2,7 +2,7 @@ import '../App.css';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import smiley from '../assets/black-smiley.svg';
-import signature from '../assets/signature.png';
+//import signature from '../assets/signature.png';
 import Footer from './Footer';
 
 //desktop media query component
@@ -116,9 +116,9 @@ function About(props) {
               </div>
             </div>
 
-            /*<div className="signature-container-mobile">
+    {/*<div className="signature-container-mobile">
               <img src={signature} alt="signature" />
-            </div>*/
+            </div>*/}
           </div>
         </div>
         <Footer/>
@@ -214,9 +214,9 @@ function About(props) {
                 <p>I am currently working at InTouchVet as a graphic designer, however I am always open for further opportunities! If you would like to work with me, I would love it if you <a href="/contact" className="profile-link">contact me</a>!</p>
               </div>
 
-              /*<div className="signature-container">
+      {/*<div className="signature-container">
                 <img src={signature} alt="signature" />
-              </div>*/
+              </div>*/}
 
             </div>
 
